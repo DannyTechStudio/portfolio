@@ -445,6 +445,7 @@ form button{
     border: none;
     border-radius: 50px;
     background-color: #006aff;
+    cursor: pointer;
 }
 
 footer{
