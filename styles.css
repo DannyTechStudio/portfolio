@@ -320,13 +320,18 @@ h3{
 
 .article-container article{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 30%;
+    height: auto;
     padding: 20px;
-    border: 1px solid rgba(155, 155, 155, 0.27);
-    border-radius: 20px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.177);
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.article-container article:hover{
+    transform: scale(1.02);
 }
 
 .article-container article img{
@@ -338,12 +343,21 @@ h3{
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: centre;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .project-description-wrapper h3{
     font-size: 1.5rem;
+    margin-bottom: 0;
 }
+
+.project-description-wrapper p{
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
 
 .project-description-wrapper a{
     width: 100px;
