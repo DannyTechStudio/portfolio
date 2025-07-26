@@ -314,7 +314,7 @@ h3{
 
 .article-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -335,8 +335,7 @@ h3{
 }
 
 .article-container article img{
-    width: 50%;
-    height: 100%;
+    width: 100%;
 }
 
 .project-description-wrapper{
