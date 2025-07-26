@@ -340,22 +340,23 @@ h3{
     align-items: centre;
 }
 
-article h3{
+.project-description-wrapper h3{
     font-size: 1.5rem;
 }
 
-article a{
+.project-description-wrapper a{
+    width: 100px;
     padding: 8px;
     color: white;
     font-weight: bold;
     border-radius: 50px;
     text-decoration: none;
     background-color: #006aff;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
 
-article a:hover{
+.project-description-wrapper a:hover{
     transform: scale(1.05);
 }
 
