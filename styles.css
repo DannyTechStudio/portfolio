@@ -328,6 +328,7 @@ h3{
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.5s ease;
+    border: 1px solid black;
 }
 
 .article-container article:hover{
