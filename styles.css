@@ -48,7 +48,7 @@ nav img{
 }
 
 .title strong{
-    color: #004cff;
+    color: rgb(0, 106, 254);
 }
 
 .title i{
@@ -69,15 +69,17 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     padding: 6px;
+    width: 80px;
     font-size: 1.1rem;
     cursor: pointer;
-    color: blue;
+    color: rgb(87, 91, 94);
     border-radius: 5px;
 }
 
 nav ul li a:hover{
-    text-decoration: underline;
-    background-color: rgba(233, 232, 232, 0.645);
+    color: rgb(0, 106, 254);
+    font-weight: bold;
+    background-color: rgba(240, 239, 239, 0.173);
 }
 
 #menu-toggle{
@@ -146,16 +148,15 @@ nav ul li a:hover{
     color: white;
     border: none;
     border-radius: 20px;
-    background-color: #03c0e1;
+    background-color: rgb(0, 106, 254);
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.207);
     cursor: pointer;
 }
 
 #resume-btn:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 4px rgba(255, 255, 255, 0.207);
-    background-color: #00D7FF;
+    background-color: rgb(27, 119, 249);
 }
 
 /* Main */
@@ -313,7 +314,7 @@ h3{
 }
 
 .article-container{
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -474,8 +475,15 @@ form button{
     color: white;
     border: none;
     border-radius: 50px;
-    background-color: #006aff;
+    background-color: rgb(0, 106, 254);
+    transition: transform 0.5s ease;
     cursor: pointer;
+}
+
+form button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.207);
+    background-color: rgb(27, 119, 249);
 }
 
 footer{
