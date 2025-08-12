@@ -1,14 +1,18 @@
 
-// Hamburger functionality
+//------------------------ Hamburger functionality
 const toogle = document.getElementById('menu-toggle');
 const navlinks = document.getElementById('nav-links');
 
+let menuOpen = false;
+
 toogle.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    toogle.innerHTML = menuOpen ? '<i class="bi bi-x-lg"></i>' : '&#9776;';
     navlinks.classList.toggle('active');
 });
 
 
-// Form Validations & Interactivitity
+//------------------------- Form Validations & Interactivitity
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const messageOption = document.getElementById("message-option");
@@ -36,19 +40,19 @@ sendBtn.addEventListener("click", () => {
     else if(messageInput === ''){        
         showFeedbackPopup("Please enter your message!", "#ff0000", "#ffffff");
     } else {
-        //Message successfully sent feedback
+        //------------------ Message successfully sent feedback
         showFeedbackPopup("Message sent successfully!", "#00ff00", "#000000");
 
-        // Changing the button text to "Sent"
+        //------------------ Changing the button text to "Sent"
         sendBtn.textContent = "Sent";
 
-        // Storing information at the localStorage
+        //------------------ Storing information at the localStorage
         localStorage.setItem('name', nameInput);
         localStorage.setItem('email', emailInput);
         localStorage.setItem('messageOption', messageOpt);
         localStorage.setItem('message', messageInput);
 
-        // Clearing input after sending
+        //------------------ Clearing input after sending
         nameInput = '';
         emailInput = '';
         messageOpt = '';
