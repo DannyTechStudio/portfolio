@@ -83,6 +83,11 @@ nav ul li a:hover{
     background-color: rgba(240, 239, 239, 0.173);
 }
 
+nav ul li a.active {
+    color: rgb(0, 106, 254);
+    font-weight: bold;
+}
+
 #menu-toggle{
     display: none;
     font-size: 1.8rem;
