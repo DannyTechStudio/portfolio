@@ -61,21 +61,54 @@ sendBtn.addEventListener("click", () => {
 });
 
 /*-------------- Function to show modal -------------- */
-    function showFeedbackPopup(message, backgroundColor, fontColor) {
-        const feedbackPopup = document.querySelector('.modal');
-        feedbackPopup.innerText = message;
-        feedbackPopup.style.backgroundColor = backgroundColor;
-        feedbackPopup.style.color = fontColor;
-        feedbackPopup.style.display = 'block';
-        
-        /*-------------- Short delay before displaying the modal-------------- */
-        setTimeout(() => {
-            feedbackPopup.classList.add('active');
-        }, 10);
-        
-        /*-------------- Hiding the modal -------------- */
-        setTimeout(() => {
-            feedbackPopup.style.display = 'none';
-            feedbackPopup.classList.remove('active');
-        }, 3000);
-    }
+function showFeedbackPopup(message, backgroundColor, fontColor) {
+    const feedbackPopup = document.querySelector('.modal');
+    feedbackPopup.innerText = message;
+    feedbackPopup.style.backgroundColor = backgroundColor;
+    feedbackPopup.style.color = fontColor;
+    feedbackPopup.style.display = 'block';
+    
+    /*-------------- Short delay before displaying the modal-------------- */
+    setTimeout(() => {
+        feedbackPopup.classList.add('active');
+    }, 10);
+    
+    /*-------------- Hiding the modal -------------- */
+    setTimeout(() => {
+        feedbackPopup.style.display = 'none';
+        feedbackPopup.classList.remove('active');
+    }, 3000);
+}
+
+/*-------------- Active effect for nav links -------------- */
+const sections = document.querySelectorAll("section");
+const navLink = document.querySelectorAll("nav-link");
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 60;
+        const sectionHeight = section.clientHeight;
+
+        if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    navLink.forEach(link => {
+        link.classList.remove('active');
+        if(link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
