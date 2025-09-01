@@ -379,6 +379,12 @@ h3{
     cursor: pointer;
 }
 
+#budget-calculator-link{
+    pointer-events: none;
+    color: gray;
+    cursor: default;
+}
+
 .project-description-wrapper a:hover{
     transform: scale(1.05);
 }
