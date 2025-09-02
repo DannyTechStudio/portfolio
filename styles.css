@@ -382,8 +382,7 @@ h3{
 #budget-calculator-link {
     width: auto;
     pointer-events: none;
-    color: #1a1a1a;
-    background-color: gray;
+    color: red;
     cursor: default;
 }
 
