@@ -305,6 +305,12 @@ h3{
     margin-top: 0;
 }
 
+.tech-skills ul li i {
+    font-size: 16px;
+    color: rgb(244, 0, 0);
+}
+
+
 #portfolio{
     display: flex;
     flex-direction: column;
