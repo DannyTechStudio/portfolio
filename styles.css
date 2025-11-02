@@ -24,7 +24,7 @@ body{
 header{
     width: 100%;
     height: 600px;
-    background-color: rgb(3, 3, 32);
+    background-color: transparent;
 }
 
 nav{
@@ -33,6 +33,7 @@ nav{
     justify-content: space-between;
     width: 100%;
     height: 60px;
+    padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +48,7 @@ nav{
     margin-left: 20px;
 }
 
-nav img{
+nav img {
     width: 52px;
     height: 52px;
 }
@@ -57,15 +58,19 @@ nav img{
     font-size: 1.5rem;
 }
 
-.title strong{
+#first_part {
     color: #00D8F5;
+}
+
+#second_part {
+    color: #ff8c00;
 }
 
 nav ul{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 35%;
+    width: 50%;
 }
 
 nav ul li{
