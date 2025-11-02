@@ -11,6 +11,14 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+a, p {
+    color: #b9b7b7;
+}
+
+h1, h2, h3 {
+    color: #00D8F5;
+}
+
 #particles-js {
     position: fixed;
     width: 100%;
@@ -176,7 +184,7 @@ nav ul li a.active {
 
 /* Main */
 main{
-    width: 70%;
+    width: 60%;
 }
 
 #about{
