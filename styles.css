@@ -37,8 +37,8 @@ nav{
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
+    background-color: #08021f;
+    border-bottom: 1px solid #ffffff1c;
 }
 
 .logo-container{
@@ -58,11 +58,7 @@ nav img{
 }
 
 .title strong{
-    color: rgb(0, 106, 254);
-}
-
-.title i{
-    color: #FF8C00;
+    color: #00D8F5;
 }
 
 nav ul{
@@ -82,15 +78,13 @@ nav ul li a{
     width: 80px;
     font-size: 1.1rem;
     cursor: pointer;
-    color: rgb(87, 91, 94);
+    color: #b9b7b7;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover{
-    color: rgb(0, 106, 254);
-    font-weight: bold;
-    background-color: rgba(240, 239, 239, 0.173);
+    color: #00D8F5;
 }
 
 nav ul li a.active {
