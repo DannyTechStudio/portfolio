@@ -108,6 +108,10 @@ nav ul li a:hover{
 }
 
 /* Home section */
+main {
+    width: 60%;
+}
+
 #home{
     display: flex;
     align-items: center;
@@ -130,16 +134,22 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0;
     border: 1px solid white;
 }
 
 .hero-section-info h1{
     font-size: 48px;
     font-weight: 700;
+    padding: 0;
+    margin: 0;
 }
 
 .hero-section-info p {
-    width: 100%;
+    width: 50%;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
 .tagline-container{
@@ -151,7 +161,7 @@ nav ul li a:hover{
 }
 
 .social-link-container{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
