@@ -117,17 +117,20 @@ nav ul li a:hover{
     width: 100%;
     top: 20%;
     left: 20%;
+    border: 1px solid white;
 }
 
 .danny-picture{
     width: 100%;
     height: 100%;
+    border: 1px solid white;
 }
 
 .hero-section-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border: 1px solid white;
 }
 
 .hero-section-info h1{
@@ -144,13 +147,15 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     gap: 2px;
+    border: 1px solid white;
 }
 
 .social-link-container{
-    width: 200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    border: 1px solid white;
 }
 
 .social-link-container img{
