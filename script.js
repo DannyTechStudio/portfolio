@@ -61,54 +61,69 @@ sendBtn.addEventListener("click", () => {
 });
 
 /*-------------- Function to show modal -------------- */
-function showFeedbackPopup(message, backgroundColor, fontColor) {
-    const feedbackPopup = document.querySelector('.modal');
-    feedbackPopup.innerText = message;
-    feedbackPopup.style.backgroundColor = backgroundColor;
-    feedbackPopup.style.color = fontColor;
-    feedbackPopup.style.display = 'block';
-    
-    /*-------------- Short delay before displaying the modal-------------- */
-    setTimeout(() => {
-        feedbackPopup.classList.add('active');
-    }, 10);
-    
-    /*-------------- Hiding the modal -------------- */
-    setTimeout(() => {
-        feedbackPopup.style.display = 'none';
-        feedbackPopup.classList.remove('active');
-    }, 3000);
-}
+const portfolioDetailsIcon = document.getElementById("portfolio-project-details-icon");
+const portfolioModal = document.getElementById("portfolio-modal");
+const portfolioCloseModalIcon = document.getElementById("portfolio-close-modal-icon");
+const passvaultDetailsIocn = document.getElementById("passvault-details-icon");
+const passvaultModal = document.getElementById("passvault-modal");
+const passvaultCloseModalIcon = document.getElementById("passvault-close-modal-icon");
+const textAnalyzerDetailsIcon = document.getElementById("text-analyzer-details-icon");
+const textAnalyzerModal = document.getElementById("text-analyzer-modal");
+const textAnalyzerCloseModalIcon = document.getElementById("text-analyzer-close-modal-icon");
+const pfCertDetailsIcon = document.getElementById("pf-cert-details-icon");
+const pfCertModal = document.getElementById("pf-cert-modal-overlay");
+const pfCertModalCloseIcon = document.getElementById("pf-cert-modal-icon");
+const wdCertDetailsIcon = document.getElementById("FCC-web-design-cert-details-icon");
+const wdCertModal = document.getElementById("FCC-WD-cert-modal-overlay");
+const wdCertModalCloseIcon = document.getElementById("FCC-RWD-cert-modal-icon");
+const jsCertDetailsIcon = document.getElementById("FCC-JS-cert-details-icon");
+const jsCertModal = document.getElementById("FCC-JS-cert-modal-overlay");
+const jsCertModalCloseIcon = document.getElementById("FCC-JS-cert-modal-icon");
 
-/*-------------- Active effect for nav links -------------- */
-const sections = document.querySelectorAll("section");
-const navLink = document.querySelectorAll("nav-link");
-
-window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 60;
-        const sectionHeight = section.clientHeight;
-
-        if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLink.forEach(link => {
-        link.classList.remove('active');
-        if(link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
+portfolioDetailsIcon.addEventListener("click", () => {
+    portfolioModal.style.display = 'flex';
 });
 
+portfolioCloseModalIcon.addEventListener("click", () => {
+    portfolioModal.style.display = 'none';
+});
 
+passvaultDetailsIocn.addEventListener("click", () => {
+    passvaultModal.style.display = 'flex';
+});
 
+passvaultCloseModalIcon.addEventListener("click", () => {
+    passvaultModal.style.display = 'none';
+});
 
+textAnalyzerDetailsIcon.addEventListener("click", () => {
+    textAnalyzerModal.style.display = 'flex';
+});
 
+textAnalyzerCloseModalIcon.addEventListener("click", () => {
+    textAnalyzerModal.style.display = 'none';
+});
 
+pfCertDetailsIcon.addEventListener("click", () => {
+    pfCertModal.style.display = 'flex';
+});
 
+pfCertModalCloseIcon.addEventListener("click", () => {
+    pfCertModal.style.display = 'none';
+});
 
+wdCertDetailsIcon.addEventListener("click", () => {
+    wdCertModal.style.display = 'flex';
+});
 
+wdCertModalCloseIcon.addEventListener("click", () => {
+    wdCertModal.style.display = 'none';
+});
+
+jsCertDetailsIcon.addEventListener("click", () => {
+    jsCertModal.style.display = 'flex';
+});
+
+jsCertModalCloseIcon.addEventListener("click", () => {
+    jsCertModal.style.display = 'none';
+});
