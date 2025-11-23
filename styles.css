@@ -219,7 +219,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid white; */
 }
 
 .upper-container {
@@ -227,7 +226,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid white; */
 }
 
 .lower-container {
@@ -235,19 +233,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid white; */
 }
 
 .lower-container img {
     width: 45%;
     padding: 0;
     margin: 0;
-    /* border: 1px solid white; */
 }
 
 .lower-container div {
     width: 60%;
-    /* border: 1px solid white; */
 }
 
 #skills {
@@ -256,7 +251,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /* border: 1px solid white; */
 }
 
 .skills-container {
@@ -276,7 +270,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid white; */
 }
 
 .tech-skills-container {
@@ -326,7 +319,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid white; */
 }
 
 .portfolio-container, .certs-container {
@@ -347,14 +339,12 @@ main {
     width: 100%;
     height: auto;
     overflow: hidden;
-    /* border: 1px solid rgba(255, 255, 255, 0.079); */
 }
 
 .sub-portfolio-container img, .sub-cert-container img {
     width: 100%;
     height: 250px;
     border: 1px solid rgba(255, 255, 255, 0.218);
-    /* object-fit: cover; */
 }
 
 .portfolio-btn-container, .cert-btn-container {
@@ -364,7 +354,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .sub-portfolio-btn-container {
@@ -373,7 +362,6 @@ main {
     align-items: center;
     justify-content: space-between;
     padding-right: 8px;
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 svg {
@@ -473,7 +461,6 @@ svg {
     width: 90%;
     gap: 0;
     padding: 0;
-    /* border: 1px solid black; */
 }
 
 .content-container h3 {
@@ -485,7 +472,6 @@ svg {
     width: 98%;
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
 }
 
 .content a {
