@@ -191,6 +191,29 @@ main {
     margin-top: 1px;
 }
 
+.auto-type {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    animation: auto-typing 8s steps(18) infinite, blink 0.5s infinite;
+}
+
+@keyframes auto-typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 52%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .more-details {
     margin-top: 10px;
 }
