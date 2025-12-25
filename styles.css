@@ -308,6 +308,28 @@ main {
     border-radius: 5px;
 }
 
+.carousel1, .carousel2, .carousel3 {
+    width: 100%;
+    max-width: 360px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.182);
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
 .soft-skills-container {
     width: 80%;
     display: flex;
@@ -329,11 +351,107 @@ main {
     justify-content: space-between;
 }
 
-.inner-wrapper {
+.inner-wrapper1, .inner-wrapper2, .inner-wrapper3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 112px;
+    height: 55px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.182);
+    border-radius: 5px;
+    position: absolute;
+    animation-name: scrollAnimation;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollAnimation {
+    to {
+        left: -120px;
+    }
+}
+
+.item1 {
+    animation-delay: calc(30s / 5 * (5 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 5 * (5 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 5 * (5 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 5 * (5 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.div1 {
+    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.div2 {
+    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.div3 {
+    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.div4 {
+    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.div5 {
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.div5 {
+    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+.wrap1 {
+    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.wrap2 {
+    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.wrap3 {
+    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.wrap4 {
+    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.wrap5 {
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.wrap5 {
+    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+.inner-wrapper1 {
+    left: max(calc(112px * 8), 100%);
+}
+
+.inner-wrapper2 {
+    right: max(calc(112px * 8), 100%);
+}
+
+.inner-wrapper3 {
+    left: max(calc(112px * 8), 100%);
 }
 
 .inner-wrapper span {
