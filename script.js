@@ -60,6 +60,85 @@ sendBtn.addEventListener("click", () => {
     }
 });
 
+// Placeholder animations
+function animateUsernameInput() {
+    let t = document.getElementById("name");
+    let a = ["Enter your name: "];
+    let i = 0;
+    let j = 0;
+    let pause = false;
+
+
+    setInterval(() => {
+        if (pause) return;
+
+        t.placeholder = a[i].slice(0, ++j) + '|';
+
+        if (j > a[i].length) {
+            pause = true;
+            setTimeout(() => {
+                j = 0;
+                i = ++i % a.length;
+                pause = false;
+            }, 80)
+        }
+    }, 250)
+};
+
+animateUsernameInput();
+
+function animateEmailInput() {
+    let t = document.getElementById("email");
+    let a = ["Enter your email address: "];
+    let i = 0;
+    let j = 0;
+    let pause = false;
+
+
+    setInterval(() => {
+        if (pause) return;
+
+        t.placeholder = a[i].slice(0, ++j) + '|';
+
+        if (j > a[i].length) {
+            pause = true;
+            setTimeout(() => {
+                j = 0;
+                i = ++i % a.length;
+                pause = false;
+            }, 80)
+        }
+    }, 220)
+};
+
+animateEmailInput();
+
+function messageInput() {
+    let t = document.getElementById("message");
+    let a = ["Enter your message here: "];
+    let i = 0;
+    let j = 0;
+    let pause = false;
+
+
+    setInterval(() => {
+        if (pause) return;
+
+        t.placeholder = a[i].slice(0, ++j) + '|';
+
+        if (j > a[i].length) {
+            pause = true;
+            setTimeout(() => {
+                j = 0;
+                i = ++i % a.length;
+                pause = false;
+            }, 50)
+        }
+    }, 200)
+};
+
+messageInput();
+
 /*-------------- Function to show modal -------------- */
 const portfolioDetailsIcon = document.getElementById("portfolio-project-details-icon");
 const portfolioModal = document.getElementById("portfolio-modal");
