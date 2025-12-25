@@ -310,7 +310,7 @@ main {
 
 .carousel1, .carousel2, .carousel3 {
     width: 100%;
-    max-width: 360px;
+    max-width: 60%;
     height: 50px;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.182);
@@ -347,9 +347,31 @@ main {
     animation-iteration-count: infinite;
 }
 
-@keyframes scrollAnimation {
+.inner-wrapper1 {
+    left: max(calc(112px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+.inner-wrapper2 {
+    right: max(calc(112px * 8), 100%);
+    animation-name: scrollRight;
+}
+
+.inner-wrapper3 {
+    left: max(calc(112px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+
+@keyframes scrollLeft {
     to {
         left: -120px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -120px;
     }
 }
 
@@ -419,18 +441,6 @@ main {
 
 .wrap5 {
     animation-delay: calc(30s / 6 * (6 - 6) * -1);
-}
-
-.inner-wrapper1 {
-    left: max(calc(112px * 8), 100%);
-}
-
-.inner-wrapper2 {
-    right: max(calc(112px * 8), 100%);
-}
-
-.inner-wrapper3 {
-    left: max(calc(112px * 8), 100%);
 }
 
 .inner-wrapper span {
