@@ -309,7 +309,7 @@ main {
 }
 
 .carousel1, .carousel2, .carousel3 {
-    width: 100%;
+    width: 60%;
     max-width: 60%;
     height: 50px;
     padding: 10px;
@@ -348,17 +348,17 @@ main {
 }
 
 .inner-wrapper1 {
-    left: max(calc(112px * 8), 100%);
+    left: max(calc(112px * 5), 100%);
     animation-name: scrollLeft;
 }
 
 .inner-wrapper2 {
-    right: max(calc(112px * 8), 100%);
+    right: max(calc(112px * 6), 100%);
     animation-name: scrollRight;
 }
 
 .inner-wrapper3 {
-    left: max(calc(112px * 8), 100%);
+    left: max(calc(112px * 6), 100%);
     animation-name: scrollLeft;
 }
 
