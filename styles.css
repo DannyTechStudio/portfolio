@@ -414,8 +414,6 @@ svg {
     height: 22px;
     padding: 8px;
     color: #FF8C00;
-    background-color: #e1e0e022;
-    border-radius: 50%;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
 }
