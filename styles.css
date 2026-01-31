@@ -590,7 +590,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--form-bg-color);
+    background-color: var(--footer-bg-color);
     margin-top: 50px;
 }
 
