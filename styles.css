@@ -356,7 +356,7 @@ section {
 }
 
 .tools-wrapper article {
-    width: 5rem;
+    width: 6rem;
     height: 4rem;
     background-color: var(--tools-article-bg-color);
 }
