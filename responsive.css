@@ -1,55 +1,82 @@
+/* GLOBAL RESET & SAFETY */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* MOBILE (0 – 425px) */
 @media (max-width: 425px) {
-    body {
-        width: 95%;
+
+    /* ---- Typing effect ---- */
+    .auto-type {
+        animation: auto-typing 5s steps(13) infinite, blink 0.5s infinite;
     }
-    
-    header {
-        width: 98%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+
+    @keyframes auto-typing {
+        0% { width: 0; }
+        50% { width: 70%; }
+    }
+
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+
+    /* ---- Layout ---- */
+    main {
+        width: 100%;
+        margin-top: 7rem;
+        gap: 3rem;
+        padding: 0 1rem;
+    }
+
+    section {
+        width: 100%;
         padding: 0;
     }
-    
-    .header-wrapper {
-        width: auto;
+
+    /* ---- Header / Nav ---- */
+    header {
+        justify-content: space-between;
+        padding: 0 1rem;
     }
-    
+
     .header-wrapper img {
         width: 2rem;
         height: 2rem;
     }
-    
+
     .title-container h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-    
+
     nav {
         display: none;
+        flex-direction: column;
         position: absolute;
         top: 100%;
-        right: 0.1rem;
-        flex-direction: column;
-        gap: 0.2rem;
-        width: 11.25rem;
-        height: 15rem;
-        padding: 0.5rem;
+        right: 0.5rem;
+        width: 11rem;
+        padding: 0.75rem;
         background: #e1e1e1;
         border-radius: 8px;
     }
 
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-evenly;
-        color: #1a1a1a;
+        gap: 0.5rem;
     }
-    
-    nav ul li {
-        margin: 0.45rem 0;
-    }
-    
+
     nav ul a {
         font-size: 0.875rem;
         color: #1a1a1a;
@@ -58,85 +85,202 @@
     nav.active {
         display: flex;
     }
-    
+
     .hamburger-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.625rem;
-        margin: 0;
+        display: block;
+        font-size: 1.5rem;
     }
 
-    main {
-        width: 100%;
-        margin-top: 5rem;
-    }
-
-    section {
-        width: 100%;
-    }
-
+    /* ---- Home ---- */
     #home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
     }
 
     #home article {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
+        align-items: center;
     }
-    
+
     .text-container {
-        width: 100%;
+        align-items: center;
     }
-    
-    .text-container h1 {
-        font-size: 24px;
-    }
-
-    .text-container p {
-        font-size: 14px;
-    }
-
-    @keyframes auto-typing {
-        0% {
-            width: 0;
-        }
-        50% {
-            width: 36%;
-        }
-    }
-
 
     .social-link-container {
-        width: 75%;
-        margin-top: 10px;
-    }
-
-    #resume-link {
-        width: 75px;
-        padding: 6px;
-        font-size: 0.875rem;
-    }
-
-    .social-link-container a img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .main-picture {
         width: 100%;
-        height: 400px;
+        height: auto;
+    }
+
+    /* ---- About (FIXED) ---- */
+    .content-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .content-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ---- Skills ---- */
+    .soft-skills-wrapper,
+    .tech-skills-wrapper,
+    .tools-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .tech-skills-wrapper article,
+    .tools-wrapper article {
+        width: 45%;
+    }
+
+    /* ---- Portfolio ---- */
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-container article {
+        width: 100%;
+    }
+
+    /* ---- Certifications ---- */
+    .certificate-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-container article {
+        width: 100%;
+    }
+
+    /* ---- Contact ---- */
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-wrapper,
+    form {
+        width: 100%;
+    }
+
+    .form-content button {
+        width: 100%;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .main-footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .address-wrapper,
+    .about-me-wrapper,
+    .footer-links {
+        width: 100%;
+    }
+
+    .social-link-wrapper {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .copyright-wrapper p {
+        margin-top: 2rem;
     }
 }
 
+/* TABLET (426 – 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
 
-@media (min-width: 425px) {
-    
+    main {
+        width: 90%;
+    }
+
+    #home {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #home article {
+        width: 100%;
+    }
+
+    .main-picture {
+        width: 60%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-wrapper img {
+        width: 70%;
+    }
+
+    .text-wrapper {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-wrapper,
+    form {
+        width: 100%;
+    }
+}
+
+/* SMALL LAPTOP (769 – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    main {
+        width: 85%;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    .content-wrapper img {
+        width: 50%;
+    }
+
+    .text-wrapper {
+        width: 50%;
+    }
+
+    .social-link-wrapper {
+        width: 90%;
+    }
+}
+
+/* LARGE SCREENS (1440px+) */
+@media (min-width: 1440px) {
+    main {
+        width: 60%;
+    }
 }
