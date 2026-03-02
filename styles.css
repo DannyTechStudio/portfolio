@@ -276,6 +276,11 @@ section {
     width: 65%;
 }
 
+.text-wrapper p a {
+    text-decoration: none;
+    color: var(--custom-cyan);
+}
+
 #skills {
     display: flex;
     flex-direction: column;
