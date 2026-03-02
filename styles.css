@@ -305,21 +305,10 @@ section {
 .soft-skills-wrapper,
 .tech-skills-wrapper,
 .tools-wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.soft-skills-wrapper{
-    width: 80%;
-}
-
-.tech-skills-wrapper {
-    width: 80%;
-}
-
-.tools-wrapper {
-    width: 68%;
 }
 
 .soft-skills-wrapper article span {
@@ -343,26 +332,24 @@ section {
 }
 
 .soft-skills-wrapper article {
-    width: auto;
-    height: 4rem;
+    width: 10rem;
     background-color: var(--soft-skill-article-bg-color);
 }
 
 .tech-skills-wrapper article {
-    width: 6rem;
-    height: 4rem;
+    width: 8rem;
     background-color: var(--tech-skill-article-bg-color);
 }
 
 .tools-wrapper article {
-    width: 6rem;
-    height: 4rem;
+    width: 8rem;
     background-color: var(--tools-article-bg-color);
 }
 
 .soft-skills-wrapper article,
 .tech-skills-wrapper article,
 .tools-wrapper article {
+    height: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,7 +358,6 @@ section {
     border-radius: 0.3125rem;
     box-shadow: 4px 4px 6px var(--box-shadow-color);
 }
-
 
 .soft-skills-wrapper article p,
 .tech-skills-wrapper article p,
