@@ -187,7 +187,7 @@ section {
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid var(--text-color);
-    animation: auto-typing 10s steps(13) infinite, blink 0.5s infinite;
+    animation: auto-typing 4s steps(13) infinite, blink 0.4s infinite;
 }
 
 @keyframes auto-typing {
@@ -195,7 +195,7 @@ section {
         width: 0;
     }
     50% {
-        width: 32%;
+        width: 35%;
     }
 }
 
