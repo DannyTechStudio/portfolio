@@ -8,7 +8,7 @@
     --nav-links-hover-color: #00D8F5;
     --faded-border-color: #ffffff1c;
     --navbar-box-shadow-color: rgba(255, 255, 255, 0.077);
-    --box-shadow-color: rgba(241, 241, 239, 0.31);
+    --box-shadow-color: rgba(rgba(241, 241, 239, 0.144));
     --border-color: rgba(225, 225, 225, 0.234);
     --form-bg-color: rgba(225, 225, 225, 0.051);
     --form-input-bg-color: #c2d8ff;
@@ -354,9 +354,18 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
     border-radius: 0.3125rem;
     box-shadow: 4px 4px 6px var(--box-shadow-color);
+}
+
+.soft-skills-wrapper article:hover,
+.tech-skills-wrapper article:hover,
+.tools-wrapper article:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.258);
+    cursor: pointer;
 }
 
 .soft-skills-wrapper article p,
