@@ -8,7 +8,7 @@
     --nav-links-hover-color: #00D8F5;
     --faded-border-color: #ffffff1c;
     --navbar-box-shadow-color: rgba(255, 255, 255, 0.077);
-    --box-shadow-color: rgba(rgba(241, 241, 239, 0.144));
+    --box-shadow-color: rgba(rgba(241, 241, 239, 0.401));
     --border-color: rgba(225, 225, 225, 0.234);
     --form-bg-color: rgba(225, 225, 225, 0.051);
     --form-input-bg-color: #c2d8ff;
@@ -237,6 +237,7 @@ section {
 
 .resume-link:hover {
     transform: scale(1.02);
+    color: var(--custom-black);
     background-color: var(--custom-cyan);
 }
 
