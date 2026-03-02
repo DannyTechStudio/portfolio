@@ -222,7 +222,7 @@ section {
     transform: scale(1.1);
 }
 
-#resume-link {
+.resume-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -235,7 +235,7 @@ section {
     background-color: var(--custom-orange);
 }
 
-#resume-link:hover {
+.resume-link:hover {
     transform: scale(1.02);
     background-color: var(--custom-cyan);
 }
