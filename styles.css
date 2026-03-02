@@ -261,20 +261,19 @@ section {
 
 .content-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
 }
 
 .content-wrapper img {
-    width: 45%;
-    height: 30.875rem;
+    width: 35%;
+    height: 22.875rem;
     border: none;
     border-radius: 5%;
 }
 
 .text-wrapper {
-    width: 55%;
+    width: 65%;
 }
 
 #skills {
