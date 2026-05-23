@@ -214,11 +214,14 @@ section {
 
 .social-link-container a {
     text-decoration: none;
+}
+
+.social-link {
     transition: all 0.8s ease;
 }
 
-.social-link-container a:hover {
-    transform: scale(1.1);
+.social-link:hover {
+    transform: scale(1.2);
 }
 
 .resume-link {
@@ -230,12 +233,12 @@ section {
     font-weight: bold;
     color: var(--custom-black);
     border-radius: 5px;
-    transition: all 0.9s ease;
+    transition: all 0.8s ease;
     background-color: var(--custom-orange);
 }
 
 .resume-link:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     color: var(--custom-black);
     background-color: var(--custom-cyan);
 }
