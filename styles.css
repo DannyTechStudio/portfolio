@@ -54,7 +54,6 @@ h2 {
 }
 
 a, p {
-    font-size: 18px;
     color: var(--text-color);
     transition: all 0.3s ease-in-out;
 }
@@ -104,7 +103,6 @@ header {
 }
 
 .title-container h1 {
-    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -228,7 +226,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 105px;
+    width: 110px;
     padding: 8px;
     font-weight: bold;
     color: var(--custom-black);
@@ -322,7 +320,6 @@ section {
 .soft-skills-wrapper article span {
     width: 2.75rem;
     height: 2.75rem;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,8 +439,12 @@ section {
     margin-right: 5px;
 }
 
+.projects-wrapper span p {
+    color: var(--custom-orange);
+}
+
 .projects-wrapper a:hover,
-    .portfolio-wrapper span p:hover {
+.portfolio-wrapper span p:hover {
     color: var(--custom-cyan);
 }
 
@@ -453,10 +454,6 @@ section {
     justify-content: space-between;
     width: 100%;
     transition: all 0.3s ease;
-} 
-
-.projects-wrapper span p {
-    color: var(--custom-orange);
 }
 
 .projects-wrapper h3 {
@@ -570,7 +567,6 @@ form h2 {
 .form-content input {
     width: 95%;
     padding: 10px;
-    font-size: 1rem;
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -583,7 +579,6 @@ form h2 {
     min-height: 150px;
     max-height: 150px;
     padding: 10px;
-    font-size: 1rem;
     color: var(--custom-black);
     border-radius: 5px;
     background-color: var(--form-input-bg-color);
@@ -594,11 +589,11 @@ form h2 {
     outline: none;
 }
 
-.form-content button {
-    width: 102%;
+#submit-btn {
+    min-width: 95%;
+    max-width: 95%;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     font-weight: bold;
     padding: 12px;
     background-color: var(--custom-orange);
@@ -606,7 +601,7 @@ form h2 {
     margin-bottom: 2rem;
 }
 
-.form-content button:hover {
+#submit-btn:hover {
     background-color: var(--form-btn-bg-color);
 }
 
@@ -642,7 +637,6 @@ footer {
 
 .address-wrapper p strong {
     color: var(--custom-black);
-    font-size: 17px;
     font-weight: bold;
 }
 
@@ -699,7 +693,6 @@ footer {
 }
 
 .copyright-wrapper p {
-    font-size: 0.875rem;
     padding-left: 15px;
     margin-top: 5rem;
 }
