@@ -24,7 +24,7 @@ body {
 
     @keyframes auto-typing {
         0% { width: 0; }
-        50% { width: 70%; }
+        50% { width: 62%; }
     }
 
     @keyframes blink {
@@ -56,7 +56,7 @@ body {
     }
 
     .title-container h1 {
-        font-size: 1.2rem;
+        font-size: 24px;
     }
 
     nav {
@@ -104,7 +104,7 @@ body {
     }
 
     .text-container {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .social-link-container {
@@ -130,9 +130,13 @@ body {
         height: auto;
     }
 
+    .intro {
+        text-align: left;
+    }
+
     .text-wrapper {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     /* ---- Skills ---- */
@@ -146,27 +150,39 @@ body {
     }
 
     .soft-skills-wrapper article {
-        width: 40%;
+        width: 48%;
     }
 
     .tech-skills-wrapper article,
     .tools-wrapper article {
-        width: 28%;
+        width: 30%;
     }
 
     .soft-skills-wrapper p,
     .tech-skills-wrapper article p,
     .tools-wrapper article p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     /* ---- Portfolio ---- */
-    .portfolio-container {
+    .projects-container {
         grid-template-columns: 1fr;
     }
 
-    .portfolio-container article {
+    .projects-container article {
         width: 100%;
+    }
+
+    .projects-wrapper h3 {
+        width: 80%;
+    }
+
+    .projects-wrapper span a {
+        padding-right: 10px;
+    }
+
+    .projects-wrapper span p {
+        display: none;
     }
 
     /* ---- Certifications ---- */
@@ -201,13 +217,13 @@ body {
 
     .main-footer-container {
         flex-direction: column;
-        gap: 2rem;
     }
 
     .address-wrapper,
     .about-me-wrapper,
     .footer-links {
         width: 100%;
+        margin-top: 2rem;
     }
 
     .social-link-wrapper {
