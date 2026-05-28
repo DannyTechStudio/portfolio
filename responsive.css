@@ -141,13 +141,23 @@ body {
     .tools-wrapper {
         width: 100%;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 1rem;
+    }
+
+    .soft-skills-wrapper article {
+        width: 40%;
     }
 
     .tech-skills-wrapper article,
     .tools-wrapper article {
-        width: 45%;
+        width: 28%;
+    }
+
+    .soft-skills-wrapper p,
+    .tech-skills-wrapper article p,
+    .tools-wrapper article p {
+        font-size: 12px;
     }
 
     /* ---- Portfolio ---- */
