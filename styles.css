@@ -430,23 +430,38 @@ section {
     border-top: 1px solid var(--border-color);
 }
 
-.projects-wrapper h3 {
-    padding: 5px;
-    width: 60%;
-}
-
 .projects-wrapper a {
-    width: 30%;
-    padding: 0;
+    width: 18%;
+    height: auto;
+    padding: 5px;
     text-decoration: none;
     position: relative;
     z-index: 999;
     pointer-events: auto;
     color: var(--custom-orange);
+    margin-right: 5px;
 }
 
-.projects-wrapper a:hover {
+.projects-wrapper a:hover,
+    .portfolio-wrapper span p:hover {
     color: var(--custom-cyan);
+}
+
+.projects-wrapper span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transition: all 0.3s ease;
+} 
+
+.projects-wrapper span p {
+    color: var(--custom-orange);
+}
+
+.projects-wrapper h3 {
+    padding: 5px;
+    width: 60%;
 }
 
 #certifications {
