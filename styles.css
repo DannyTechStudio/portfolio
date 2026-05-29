@@ -376,7 +376,7 @@ section {
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--border-color);
     border-radius: 50px;    
-    box-shadow: 4px 4px 4px rgba(241, 241, 239, 0.153);
+    box-shadow: 4px 4px 4px rgba(241, 241, 239, 0.067);
     cursor: pointer;
 }
 
