@@ -15,7 +15,7 @@ body {
 }
 
 /* MOBILE (0 – 425px) */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 
     /* ---- Typing effect ---- */
     .auto-type {
@@ -243,14 +243,13 @@ body {
 }
 
 /* TABLET (426 – 768px) */
-@media (min-width: 426px) and (max-width: 768px) {
-
+@media (min-width: 427px) and (max-width: 1024px) {
     main {
         width: 90%;
     }
 
     #home {
-        flex-direction: column;
+        flex-direction: row;
         gap: 3rem;
     }
 
