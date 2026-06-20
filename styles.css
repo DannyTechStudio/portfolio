@@ -242,7 +242,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 110px;
+    width: 100px;
     padding: 8px;
     font-weight: bold;
     color: var(--custom-black);
