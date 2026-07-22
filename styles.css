@@ -234,13 +234,6 @@ section {
     border-radius: 50px;
 }
 
-.auto-type {
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: auto-typing 4s steps(13) infinite, blink 0.4s infinite;
-}
-
 .hero-text-container h1, p {
     margin: 0;
 }
