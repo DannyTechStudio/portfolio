@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Portfolio Residesign</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="shortcut icon" href="images/Dannytechstudio_favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="shortcut icon" href="images/dannytechstudio_favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <div id="particles-js"></div>
 
-    <header>
+    <header id="home">
         <nav>
             <a href="#home" class="home-link">
                 <div class="header-wrapper">
-                    <img src="images/dannytechstudio_favicon.png" alt="DannyTechStudio logo">
+                    <img src="images/Dannytechstudio_favicon.png" alt="DannyTechStudio logo">
 
                     <h1 class="logo-text">
                         <span class="title-part-one">DannyTech</span>
@@ -31,6 +31,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
@@ -40,333 +41,38 @@
             <a href="#contact" class="nav-contact-link">Ready To build?</a>
         </nav>
 
-        <section id="home">
+        <div class="hero">
             <article>
                 <div class="hero-text-container">
-                    <span>● Backend Developer</span>
-                    <h1 class="hero-text">I Build Scalable and Secure Backend Systems & APIs That Power Modern Businesses.</h1>
-                    <p class="sub-text">Specializing in Django, Django REST Framework, REST APIs, Database Architecture, and Business Web Applications.</p>
+                    <span class="hero-badge">● Backend Developer</span>
+                    <h1 class="hero-headline">
+                        I Build <span class="accent">Scalable and Secure </span> Backend Systems & APIsThat Power Modern
+                        <span class="accent">Businesses</span>.
+                    </h1>
+                    <p class="sub-text">Specializing in Python, Django, Django REST Framework, REST APIs, Database
+                        Architecture, and Business Web Applications with a strong foundation in frontend development in
+                        HTML, CSS and JavaScript.</p>
                 </div>
-        
+
                 <div class="cta-link-container">
                     <a href="https://wa.me/233540758576" target="_blank" class="whatsapp-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                         </svg>
                         Message me
                     </a>
-        
+
                     <a href="#projects" class="project-link">
                         View My Works
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                         </svg>
                     </a>
-        
-                    <a href="assets/Daniel_Offei_resume.pdf" class="resume-link" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
-                        </svg>
-                        My Resume
-                    </a>
-        
-                </div>
-            </article>
-        
-            <img class="main-picture" src="images/Danny_main.jpg" alt="Daniel's picture">
-        </section>
 
-        <button class="hamburger-icon" aria-label="Toggle navigation">&#9776;</button>
-    </header>
-
-    <main>
-        <section id="about">
-            <article>
-                <h2>About me</h2>
-            </article>
-            <article class="content-wrapper">
-                <img src="images/Danny_about.png" alt="Daniel's picture">
-                <div class="text-wrapper">
-                    <p>I am a Certified Backend Developer from the <a href="https://www.alxafrica.com"
-                            target="_blank">ALX Backend Engineering Program</a> with a strong foundation in frontend web
-                        development and hands-on experience building scalable, real-world backend systems. My work
-                        centers on designing and implementing RESTful APIs, managing databases, and applying sound
-                        backend system design principles. Alongside this, I hold certifications in Web Design and
-                        JavaScript Algorithms & Data Structures from <a href="https:://www.freecodecamp.com"
-                            target="_blank">freeCodeCamp</a>, which strengthened my problem-solving and coding
-                        abilities..</p>
-                    <p>To apply these skills, I have built and deployed multiple projects, including a personal
-                        portfolio website hosted on GitHub Pages with a custom domain, as well as frontend and
-                        backend-focused applications such as a text analyzer, ecommerce API, social media API and
-                        personal finance and budgeting API. Each project reflects my ability to analyze real-world
-                        problems and deliver functional, maintainable solutions.</p>
-                    <p>I am open to backend-focused opportunities, collaborations, and knowledge-sharing, and I welcome
-                        recommendations or endorsements from peers, mentors, and collaborators.</p>
-                </div>
-            </article>
-        </section>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-main-wrapper">
-                <div class="soft-skills-container">
-                    <h3>Soft Skills</h3>
-                    <div class="soft-skills-wrapper">
-                        <article>
-                            <p>Leadership</p>
-                        </article>
-                        <article>
-                            <p>Communication</p>
-                        </article>
-                        <article>
-                            <p>Teamwork</p>
-                        </article>
-                        <article>
-                            <p>Time Mgmt.</p>
-                        </article>
-                        <article>
-                            <p>Problem solving</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="tech-skills-container">
-                    <h3>Technical Skils</h3>
-                    <div class="tech-skills-wrapper">
-                        <article>
-                            <p>HTML5</p>
-                        </article>
-                        <article>
-                            <p>CSS3</p>
-                        </article>
-                        <article>
-                            <p>JavaScript</p>
-                        </article>
-                        <article>
-                            <p>Python</p>
-                        </article>
-                        <article>
-                            <p>Django</p>
-                        </article>
-                        <article>
-                            <p>MYSQL</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="tools-container">
-                    <h3>Tools</h3>
-                    <div class="tools-wrapper">
-                        <article>
-                            <p>Git</p>
-                        </article>
-                        <article>
-                            <p>GitHub</p>
-                        </article>
-                        <article>
-                            <p>VS Code</p>
-                        </article>
-                        <article>
-                            <p>Postman</p>
-                        </article>
-                        <article>
-                            <p>Figma</p>
-                        </article>
-                        <article>
-                            <p>Drawio</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-container">
-                <article>
-                    <img src="images/retailprime_api.png" alt="E-commerce api codebase image">
-                    <div class="projects-wrapper">
-                        <h3>RetailPrime: E-Commerce API</h3>
-                        <a href="https://github.com/DannyTechStudio/ecommerce_project.git" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                </svg>
-                                <p>Code</p>
-                            </span>
-                        </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/budgetflow_api.png" alt="Personal finance and budgeting api codebase image">
-                    <div class="projects-wrapper">
-                        <h3>Budgetflow: Finance & Budgeting API</h3>
-                        <a href="https://github.com/DannyTechStudio/ALX_BE_Capstone_Project.git" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                </svg>
-                                <p>Code</p>
-                            </span>
-                        </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/portfolio_ui.png" alt="Portfolio website image">
-                    <div class="projects-wrapper">
-                        <h3>Personal Portfolio Website</h3>
-                        <a href="https://github.com/DannyTechStudio/portfolio.git" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                </svg>
-                                <p>Code</p>
-                            </span>
-                        </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/text_analyzer_ui.png" alt="Text analyzer UI image">
-                    <div class="projects-wrapper">
-                        <h3>Text Analyzer App</h3>
-                        <a href="https://github.com/DannyTechStudio/Vanilla-JS-Text-Analyzer.git" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                </svg>
-                                <p>Code</p>
-                            </span>
-                        </a>
-                        <a href="https://dannytechstudio.github.io/Vanilla-JS-Text-Analyzer/" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
-                                    <path fill-rule="evenodd"
-                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
-                                </svg>
-                                <p>View</p>
-                            </span>
-                        </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/passvault_ui_image.png" alt="Passvault UI image">
-                    <div class="projects-wrapper">
-                        <h3>Password Manager App</h3>
-                        <a href="https://github.com/DannyTechStudio/PassVault.git" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                </svg>
-                                <p>Code</p>
-                            </span>
-                        </a>
-                        <a href="https://dannytechstudio.github.io/PassVault/" target="_blank"
-                            rel="noopener noreferrer">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
-                                    <path fill-rule="evenodd"
-                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
-                                </svg>
-                                <p>View</p>
-                            </span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2>My Certifications</h2>
-            <div class="certificate-container">
-                <article>
-                    <img src="images/backend_web_dev_certi.png" alt="Alx backend certifcate">
-                    <h3>ALX Backend web development Certificate</h3>
-                </article>
-                <article>
-                    <img src="images/professional_foundations_cert.png" alt="Alx Professional Foundations Certificate">
-                    <h3>ALX Professional Foundations Certificate</h3>
-                </article>
-                <article>
-                    <img src="images/javascript_cert.png" alt="freeCodeCamp JavaScript certificate">
-                    <h3>freeCodeCamp JavaScript Certificate</h3>
-                </article>
-                <article>
-                    <img src="images/web_design_cert.png" alt="freeCodeCamp Web design certificate">
-                    <h3>freeCodeCamp Web Design Certificate</h3>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact me</h2>
-            <div class="contact-container">
-                <div class="contact-wrapper">
-                    <h3>Let's connect</h3>
-                    <p>I am always open to new opprotunities, projects or chat about my experience, technology or
-                        development</p>
-                    <article>
-                        <h3>Email:</h3>
-                        <p>Daniel.Offei03@gmail.com</p>
-                    </article>
-                    <article>
-                        <h3>Telephone:</h3>
-                        <p>+233540758576</p>
-                    </article>
-                    <article>
-                        <h3>Location:</h3>
-                        <p>Accra, Greater Accra Region Ghana</p>
-                    </article>
-                </div>
-                <form action="">
-                    <h3>Send a message</h3>
-                    <div class="form-content">
-                        <label for="name">Your Name:</label>
-                        <input type="text" name="name" id="name-input" placeholder="Enter your name">
-                        <label for="email">Your Email:</label>
-                        <input type="email" name="email" id="email-input" placeholder="Enter your email">
-                        <label for="message">Your message:</label>
-                        <textarea name="message" id="message-input" placeholder="Enter your message here"></textarea>
-                        <button type="submit" id="submit-btn">Submit message</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="main-footer-container">
-            <div class="about-me-wrapper">
-                <div class="header-wrapper">
-                    <img src="images/dannytechstudio_favicon.png" alt="DannyTechStudio logo">
-                    <div class="title-container">
-                        <h1 class="title-part-one">DannyTech</h1>
-                        <h1 class="title-part-two">Studio</h1>
-                    </div>
-                </div>
-                <p>I'm a Backend Developer focused on APIs, databases, and scalable systems. Open to collaborations,
-                    backend roles, and knowledge-sharing.</p>
-                <div class="social-link-wrapper">
                     <a href="assets/Daniel_Offei_resume.pdf" class="resume-link" download>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-download" viewBox="0 0 16 16">
@@ -375,58 +81,737 @@
                             <path
                                 d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
                         </svg>
-                        Resume
+                        My Resume
                     </a>
-                    <a href="mailto:Daniel.Offei03@gmail.com"><img src="images/gmail_logo.png" alt="Gmail logo"></a>
-                    <a href="https://www.linkedin.com/in/dannytechstudio" target="_blank" rel="noopener noreferrer"><img
-                            src="images/linkedin_logo.png" alt="LinkedIn logo"></a>
-                    <a href="https://www.github.com/DannyTechStudio" target="_blank" rel="noopener noreferrer"><img
-                            src="images/github_logo_2.jpg" alt="GitHub logo"></a>
-                    <a href="http://www.youtube.com/@DannyTechStudio" target="_blank" rel="noopener noreferrer"><img
-                            src="images/youtube_logo.png" alt="YouTube logo"></a>
+
+                </div>
+            </article>
+
+            <img class="main-picture" src="images/Danny_main.jpg" alt="Daniel's picture">
+        </div>
+
+        <button class="hamburger-icon" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 class="section-title">About me</h2>
+
+            <article class="content-wrapper">
+                <img src="images/Danny_about.png" alt="Daniel's picture">
+
+                <div class="text-wrapper">
+                    <h2>About The Developer Behind the Code</h2>
+
+                    <p>My name is Daniel Offei. A certified Backend Developer through the <a
+                            href="https://www.alxafrica.com" target="_blank">ALX Backend Engineering Program</a>,
+                        specializing in building secure, scalable, and maintainable
+                        backend systems that solve real business problems. My expertise lies in designing RESTful APIs,
+                        architecting backend
+                        applications, managing relational databases, and writing clean, reliable code that businesses
+                        can confidently build
+                        upon.
+                    </p>
+
+                    <p>
+                        With a solid foundation in frontend web development and certifications in Web Design and
+                        JavaScript Algorithms &
+                        Data Structures from <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>, I
+                        understand the
+                        complete software development lifecycle. This enables me to build backend solutions that
+                        integrate seamlessly with
+                        user interfaces, deliver excellent performance, and remain easy to extend as products evolve.
+                    </p>
+
+                    <p>
+                        I've applied these skills by building real-world projects, including a Personal Finance &
+                        Budgeting API, an
+                        E-commerce API, a Social Media API, a Text Analyzer application, and this portfolio website.
+                        Whether you're
+                        launching a new product or improving an existing one, I'm committed to delivering thoughtfully
+                        engineered,
+                        thoroughly tested software backed by clear communication, dependable collaboration, and a focus
+                        on long-term
+                        maintainability.
+                    </p>
+                </div>
+            </article>
+
+            <div class="about-footer">
+                <article class="footer-addons">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>
+                        Experience
+                    </span>
+                    <p>2+ yrs</p>
+                </article>
+
+                <article class="footer-addons">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-code" viewBox="0 0 16 16">
+                            <path
+                                d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z" />
+                        </svg>
+                        Projects
+                    </span>
+                    <p>5+</p>
+                </article>
+
+                <article class="footer-addons">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        Location
+                    </span>
+                    <p>Accra, Ghana</p>
+                </article>
+
+                <article class="footer-addons">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                            <path
+                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                        </svg>
+                        Response Time
+                    </span>
+                    <p>Less than 24 hours</p>
+                </article>
+
+                <article class="footer-addons">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                        Status
+                    </span>
+                    <p>Open to Work</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">My Expertise</h2>
+
+            <div class="section-headline-wrapper">
+                <h2>Technical & Professional Skills</h2>
+                <p>
+                    A balanced blend of backend engineering, frontend development, design principles, modern development
+                    tools, and
+                    professional skills that enables me to build secure, scalable, and maintainable software solutions
+                    from concept to
+                    deployment.
+                </p>
+
+                <div class="filter-tabs" role="tablist">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="soft">Soft</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="tools">Design & Tools</button>
                 </div>
             </div>
-            <div class="address-wrapper">
-                <h3>Address:</h3>
-                <p><strong>Email: </strong>Daniel.Offei03@gmail</p>
-                <p><strong>Telephone: </strong>+23540758576</p>
-                <p><strong>Address: </strong>Greater Accra Ghana</p>
+
+            <div class="skills-main-wrapper">
+
+                <div class="skill-card" data-category="soft">
+                    <h3>Professional Foundation Skills</h3>
+
+                    <ul class="skill-list">
+                        <li>Leadership</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem solving</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-category="frontend">
+                    <h3>Frontend Development</h3>
+
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>React <small>in progress</small></li>
+                        <li>TailWind CSS <small>in progress</small></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <h3>Backend & APIs</h3>
+
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Django REST Framework</li>
+                        <li>MYSQL</li>
+                        <li>Nodejs / Express <small>in progress</small></li>
+                        <li>PostgreSQL <small>in progress</small></li>
+                        <li>MongoDB <small>in progress</small></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <h3>Design & Tooling</h3>
+
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>Postman</li>
+                        <li>Figma</li>
+                        <li>Drawio</li>
+                    </ul>
+                </div>
             </div>
-            <ul class="footer-links">
-                <h3>Links:</h3>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="section-headline-wrapper">
+                <h2>Featured Projects</h2>
+
+                <p>
+                    A selection of projects that showcase my ability to analyze real-world challenges, architect
+                    scalable solutions, and
+                    build secure, maintainable software using modern technologies and best development practices.
+                </p>
+
+                <div class="filter-tabs" role="tablist">
+                    <button class="project-filter-btn active" data-filter="all">All Projects</button>
+                    <button class="project-filter-btn" data-filter="full-stack">Full-stack</button>
+                    <button class="project-filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="project-filter-btn" data-filter="backend">Backend</button>
+                </div>
+            </div>
+
+            <div class="projects-container">
+                <article class="project-card" data-category="backend">
+                    <div class="project-img-wrapper">
+                        <img src="images/retailprime_api.png" alt="E-commerce api codebase image">
+                    </div>
+
+                    <div class="project-details-wrapper">
+                        <h3>RetailPrime: E-Commerce API</h3>
+
+                        <div class="stack-wrapper">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Django REST Framework</span>
+                            <span>JWT</span>
+                            <span>MySQL</span>
+                            <span>PayStack Integration</span>
+                        </div>
+
+                        <small class="project-descriptions">
+                            RetailPrime is a single-vendor eCommerce platform built with Python, Django, Django REST
+                            Framework, MySQL, JWT, and
+                            Paystack, featuring product, inventory, order, coupon, and review management, secure
+                            payments, cart functionality, and
+                            order tracking.
+                        </small>
+
+                        <div class="project-link-wrapper">
+                            <button id="view-details">
+                                Case Study
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+
+                            <a href="https://github.com/DannyTechStudio/ecommerce_project.git" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="backend">
+                    <div class="project-img-wrapper">
+                        <img src="images/budgetflow_api.png" alt="Personal finance and budgeting api codebase image">
+                    </div>
+
+                    <div class="project-details-wrapper">
+                        <h3>Budgetflow: Finance & Budgeting API</h3>
+
+                        <div class="stack-wrapper">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Django REST Framework</span>
+                            <span>JWT</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <small class="project-descriptions">
+                            BudgetFlow is a RESTful backend API for managing personal finances. It allows authenticated
+                            users to track their incomes and expenses, create custom income and expense categories, view
+                            their financial analytics, and monthly summaries, making financial insights and clarity
+                            easy.
+                        </small>
+
+                        <div class="project-link-wrapper">
+                            <button id="view-details">
+                                Case Study
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+
+                            <a href="https://github.com/DannyTechStudio/ALX_BE_Capstone_Project.git" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="frontend">
+                    <div class="project-img-wrapper">
+                        <img src="images/portfolio_ui_image.png" alt="Portfolio website image">
+                    </div>
+
+                    <div class="project-details-wrapper">
+                        <h3>Personal Portfolio Website</h3>
+
+                        <div class="stack-wrapper">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <small class="project-descriptions">
+                            This is my responsive personal portfolio website showcasing my projects, services, technical
+                            expertise, certifications, and professional experience through a modern, accessible design
+                            where
+                            companies or individuals can download and view my resume, reach to me whether for a new
+                            project, improving an existing one or discuss their ideas.
+                        </small>
+
+                        <div class="project-link-wrapper">
+                            <button id="view-details">
+                                Case Study
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+
+                            <a href="https://github.com/DannyTechStudio/portfolio.git" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="frontend">
+                    <div class="project-img-wrapper">
+                        <img src="images/text_analyzer_ui.png" alt="Text analyzer UI image">
+                    </div>
+
+                    <div class="project-details-wrapper">
+                        <h3>Text Analyzer App</h3>
+
+                        <div class="stack-wrapper">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <small class="project-descriptions">
+                            Text Analyzer is a web-based text analysis tool built with HTML, CSS, and JavaScript,
+                            featuring real-time word,
+                            character, sentence, and reading-time analysis with text transformation utilities.
+                        </small>
+
+                        <div class="project-link-wrapper">
+                            <button id="view-details">
+                                Case Study
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+
+                            <a href="https://dannytechstudio.github.io/Vanilla-JS-Text-Analyzer/" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                    <path
+                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                </svg>
+                                Live Preview
+                            </a>
+
+                            <a href="https://dannytechstudio.github.io/Vanilla-JS-Text-Analyzer/" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="frontend">
+                    <div class="project-img-wrapper">
+                        <img src="images/passvault_ui_image.png" alt="Passvault UI image">
+                    </div>
+
+                    <div class="project-details-wrapper">
+                        <h3>Password Management App</h3>
+
+                        <div class="stack-wrapper">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <small class="project-descriptions">
+                            A password manager web app built with HTML, CSS, and JavaScript. PassVault helps users
+                            generate strong passwords, check
+                            password strength, store and manage saved passwords, and toggle security options like
+                            encryption with a master password.
+                            The app is fully responsive for both desktop and mobile devices.
+                        </small>
+
+                        <div class="project-link-wrapper">
+                            <button id="view-details">
+                                Case Study
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+
+                            <a href="https://dannytechstudio.github.io/PassVault/" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                    <path
+                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                </svg>
+                                Live Preview
+                            </a>
+
+                            <a href="https://dannytechstudio.github.io/PassVault/" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2 class="section-title">Certifications</h2>
+
+            <div class="section-headline-wrapper">
+                <h2>My Certifications & Trainings</h2>
+
+                <p>
+                    A collection of industry-recognized certifications that demonstrate my technical foundation,
+                    commitment to continuous
+                    learning, and dedication to delivering professional software solutions.
+                </p>
+            </div>
+
+            <div class="certificate-container">
+                <article class="certificate-card">
+                    <div class="cert-img-wrapper">
+                        <img src="images/backend_web_dev_certi.png" alt="Alx backend certifcate">
+                    </div>
+                    <div class="cert-details-wrapper">
+                        <h3>Backend Web Development <small>(5 months)</small></h3>
+                        <p>ALX Software Engineering Program</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card">
+                    <div class="cert-img-wrapper">
+                        <img src="images/professional_foundations_cert.png"
+                            alt="Alx Professional Foundations Certificate">
+                    </div>
+                    <div class="cert-details-wrapper">
+                        <h3>Professional Foundations <small>(3 months)</small></h3>
+                        <p>ALX Professional Foundations Program</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card">
+                    <div class="cert-img-wrapper">
+                        <img src="images/javascript_cert.png" alt="freeCodeCamp JavaScript certificate">
+                    </div>
+                    <div class="cert-details-wrapper">
+                        <h3>JavaScript Data Structures & Algorithms <small>(6 months)</small></h3>
+                        <p>freeCodeCamp JavaScript Program</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card">
+                    <div class="cert-img-wrapper">
+                        <img src="images/web_design_cert.png" alt="freeCodeCamp Web design certificate">
+                    </div>
+                    <div class="cert-details-wrapper">
+                        <h3>Responsive Web Design <small>(3 months)</small></h3>
+                        <p>freeCodeCamp Responsive Web Design Program</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact me</h2>
+
+            <div class="contact-container">
+                <div class="contact-wrapper">
+                    <div class="contact-headline-wrapper">
+                        <span class="contact-badge">Get in Touch</span>
+                        <h2>Let's Build Something Great</h2>
+                        <p>Have a project in mind? Let's discuss how I can help bring your ideas to life. I am always
+                            open to new opprotunities, projects or chat about my experience, technology or development.
+                        </p>
+                    </div>
+
+                    <div class="contact-details-wrapper">
+                        <p><strong>Email:</strong> Daniel.Offei03@gmail.com</p>
+                        <p><strong>Telephone:</strong> +233540758576</p>
+                        <p><strong>Location:</strong> Accra, Ghana</p>
+                    </div>
+
+                    <div class="contact-service-wrapper">
+                        <h3>What I Can Help You With:</h3>
+                        <ul>
+                            <li>Custom Backend Development</li>
+                            <li>Business Website</li>
+                            <li>E-Commerce Backend Solutions</li>
+                            <li>Portfolio & Personal Brand</li>
+                            <li>RESTful API Development & Integration</li>
+                            <li>Database Design & Management</li>
+                            <li>Authentication & API Security</li>
+                            <li>Backend Maintenance & Optimization/li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-socials-wrapper">
+                        <h3>You Can Also Find Me On:</h3>
+
+                        <div class="links-wrapper">
+                            <a href="mailto:Daniel.Offei03@gmail.com" title="Gmail" class="gmail-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg>
+                            </a>
+
+                            <a href="https://wa.me/233540758576" title="WhatsApp" class="whatsapp-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/dannytechstudio" title="LinkedIn" class="linkedin-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                </svg>
+                            </a>
+
+                            <a href="https://www.github.com/DannyTechStudio" title="GitHub" class="github-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                            </a>
+
+                            <a href="http://www.youtube.com/@DannyTechStudio" title="YouTube" class="youtube-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <div class="form-headline-wrapper">
+                        <h3>Send A Message</h3>
+                        <p>
+                            Please fill out the form below with details about your project, requirements, or inquiry.
+                            I'll review your message and
+                            get back to you as soon as possible.
+                        </p>
+                    </div>
+
+                    <div class="form-content">
+                        <input type="hidden" name="access_key" value="8f31d6f1-c191-49bb-1234-ab1bb90309ea">
+
+                        <div class="fieldset-wrapper">
+                            <fieldset>
+                                <label for="name-input">Your Name</label>
+                                <input type="text" id="name-input" name="name" autocomplete="name"
+                                    placeholder="John Doe" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="email-input">Email Address</label>
+                                <input type="email" id="email-input" name="email" autocomplete="email"
+                                    placeholder="john@example.com" required>
+                            </fieldset>
+                        </div>
+
+                        <fieldset>
+                            <label for="subject-input">Subject</label>
+                            <select name="subject" id="subject-input" required>
+                                <option value="" selected disabled>Select a subject</option>
+                                <option value="Backend Development">Backend Development</option>
+                                <option value="REST API Development">REST API Development</option>
+                                <option value="API Integration">API Integration</option>
+                                <option value="Database Design">Database Design</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Bug Fixes & Maintenance">Bug Fixes & Maintenance</option>
+                                <option value="Project Consultation">Project Consultation</option>
+                                <option value="Collaboration Opportunity">Collaboration Opportunity</option>
+                                <option value="Job Opportunity">Job Opportunity</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="message-input">Project Details</label>
+                            <textarea id="message-input" name="message" rows="6"
+                                placeholder="Tell me about your project, goals, timeline, and any specific requirements..."
+                                required></textarea>
+                        </fieldset>
+
+                        <button id="submit-btn" type="submit">Send message</button>
+
+                        <p id="form-status"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main-wrapper">
+            <div class="footer-headline-wrapper">
+                <img src="images/Dannytechstudio_favicon.png" alt="DannyTechStudio logo">
+                <h1 class="logo-text">
+                    <span class="title-part-one">DannyTech</span>
+                    <span class="title-part-two">Studio</span>
+                </h1>
+            </div>
+
+            <div class="copyright-wrapper">
+                <small>© 2026 DannyTechStudio. All Rights Reserved.</small>
+            </div>
         </div>
-        <div class="copyright-wrapper">
-            <p>©DannyTechStudio. All Rights Reserved.</p>
-        </div>
+
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Servicess</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        particlesJS(
-            "particles-js", {
+        particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 50,
-                    "density": {
-                        "enable": true,
-                        "value_area": 700
-                    }
+                    "value": 100,
+                    "density": { "enable": true, "value_area": 1500 }
                 },
-                "color": { "value": "#fff" },
+                "color": { "value": "#00d4ff" },
                 "shape": { "type": "circle" },
-                "opacity": { "value": 0.3 },
+                "opacity": { "value": 0.2 },
                 "size": { "value": 3, "random": true },
                 "line_linked": {
-                    "enable": true,
+                    "enable": false,
                     "distance": 250,
-                    "color": "#00bcd4",
+                    "color": "#00d4ff",
                     "opacity": 0.1,
                     "width": 1
                 },
@@ -451,8 +836,8 @@
                 }
             },
             "retina_detect": true
-        }
-        );
+        });
     </script>
 </body>
+
 </html>
