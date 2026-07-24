@@ -91,7 +91,6 @@ header {
     justify-content: center;
     margin-bottom: 0;
     padding-bottom: 0;
-    border: 1px solid rgb(0, 253, 17);
 }
 
 .home-link {
@@ -193,7 +192,7 @@ nav ul li a.active {
 }
 
 main {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,7 +205,6 @@ section {
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    border: 1px solid white;
 }
 
 .hero {
@@ -215,7 +213,6 @@ section {
     justify-content: space-between;
     width: 100%;
     /* min-height: 100vh; */
-    border: 1px solid rgb(245, 2, 2);
 }
 
 .hero article {
