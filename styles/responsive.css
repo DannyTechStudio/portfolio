@@ -311,6 +311,6 @@ body {
 /* LARGE SCREENS (1440px+) */
 @media (min-width: 1440px) {
     main {
-        width: 60%;
+        width: 80%;
     }
 }
