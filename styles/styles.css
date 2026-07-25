@@ -234,7 +234,7 @@ section {
 
 .hero-text-container .hero-badge {
     width: max-content;
-    color: var(--custom-cyan);
+    color: var(--custom-orange);
     padding: 5px 10px;
     font-size: 14px;
     border: 1px solid var(--border-color);
@@ -265,7 +265,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
 }
 
 .cta-link-container a {
@@ -273,6 +273,8 @@ p {
 }
 
 .resume-link,
+.service-link,
+.whatsapp-link,
 .project-link {
     display: flex;
     align-items: center;
@@ -287,18 +289,13 @@ p {
 }
 
 .resume-link:hover,
+.service-link:hover,
 .project-link:hover {
     color: var(--custom-black);
     background-color: var(--custom-cyan);
 }
 
 .whatsapp-link {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 8px 15px;
-    border-radius: 50px;
     color: var(--custom-black);
     background-color: #05d150;
 }
