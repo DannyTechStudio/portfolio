@@ -206,7 +206,7 @@ section {
     margin: 0;
 }
 
-.hero {
+#home {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -216,7 +216,7 @@ section {
     padding-bottom: 0;
 }
 
-.hero .hero-content {
+#home .hero-content {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -252,10 +252,16 @@ p {
 }
 
 .hero-headline {
-    width: 90%;
+    width: 85%;
     padding: 0;
     line-height: 60px;
     color: var(--text-color);
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.hero-headline.fade-out {
+    opacity: 0;
 }
 
 .hero-headline .accent {
