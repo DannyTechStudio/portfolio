@@ -468,7 +468,7 @@ p {
 .filter-btn.active,
 .filter-btn:hover,
 .project-filter-btn.active,
-.project-filter-btn.hover {
+.project-filter-btn:hover {
     background: var(--input-bg-color);
     color: var(--custom-black);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
