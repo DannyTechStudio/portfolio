@@ -54,5 +54,27 @@ document.addEventListener("DOMContentLoaded", () => {
         "I Build Secure Backend Systems, REST APIs, and Database Solutions That Businesses Can Rely On.",
         "Helping Businesses Build Faster, Scale Smarter, and Grow with Reliable Backend Solutions.",
         "I Turn Business Ideas into Secure, Scalable Backend Solutions that can Web & Mobile Apps.",
-    ]
+    ];
+
+    const heroHeadline = document.querySelector(".hero-headline");
+    let currentIndex = 0;
+    heroHeadline.innerHTML = heroHeadlineTexts[currentIndex];
+
+    const displayTime = 15000;
+    const fadeTime = 2000;
+
+    function changeHeadline() {
+        heroHeadline.classList.add("fade-out");
+
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % heroHeadlineTexts.length;
+
+            heroHeadline.innerHTML = heroHeadlineTexts[currentIndex];
+
+            heroHeadline.classList.remove("fade-out");
+
+        }, fadeTime);
+    }
+
+    setInterval(changeHeadline, displayTime + fadeTime);
 });   
