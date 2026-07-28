@@ -48,19 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
     /*-----------------------------------------------
             Dynamic Hero Headline Fucntionality
     -----------------------------------------------*/
-    const heroHeadlinesText = [
-        "I Build Secure, Scalable Backend Systems That Power Modern Businesses.",
-        "I Design, Build, and Optimize Backend Systems That Power Modern Digital Products.",
-        "I Build Secure Backend Systems, REST APIs, and Database Solutions That Businesses Can Rely On.",
-        "Helping Businesses Build Faster, Scale Smarter, and Grow with Reliable Backend Solutions.",
-        "I Turn Business Ideas into Secure, Scalable Backend Solutions that can Web & Mobile Apps.",
+    const heroHeadlineTexts = [
+        "I Build <span class='accent'>Secure, Scalable</span> Backend Systems That Power Modern Businesses.",
+        "I Design, Build, and Optimize <span class='accent'>Backend Solutions</span> for Modern Digital Products.",
+        "I Create <span class='accent'>Secure APIs</span> and Database Solutions Businesses Can Depend On.",
+        "I Help Businesses <span class='accent'>Build Faster, Scale Smarter</span>, and Grow with Technology.",
+        "I Turn Business Ideas into <span class='accent'>Secure Backend Solutions</span> for Web and Mobile Apps."
     ];
 
     const heroHeadline = document.querySelector(".hero-headline");
     let currentIndex = 0;
     heroHeadline.innerHTML = heroHeadlineTexts[currentIndex];
 
-    const displayTime = 15000;
+    const displayTime = 12000;
     const fadeTime = 2000;
 
     function changeHeadline() {
