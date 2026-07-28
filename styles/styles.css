@@ -251,7 +251,7 @@ p {
 }
 
 .hero-headline {
-    width: 85%;
+    width: 95%;
     padding: 0;
     line-height: 60px;
     color: var(--text-color);
@@ -303,7 +303,7 @@ p {
 .service-link:hover,
 .project-link:hover {
     color: var(--custom-black);
-    background-color: var(--custom-cyan);
+    background-color: var(--custom-orange);
 }
 
 .whatsapp-link {
