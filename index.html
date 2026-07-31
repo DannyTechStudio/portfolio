@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Offei | Backend Developer Building Secure & Scalable APIs</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/breakpoints.css">
     <link rel="shortcut icon" href="images/Dannytechstudio_favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -26,7 +26,7 @@
                     </h1>
                 </div>
             </a>
-
+            
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -36,7 +36,9 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
+            
+            <button class="hamburger-icon" aria-label="Toggle navigation">&#9776;</button>
+            
             <a href="#contact" class="nav-contact-link">Ready To Build?</a>
         </nav>
 
@@ -46,7 +48,8 @@
                     <span class="hero-badge">● Backend Developer</span>
                     <h1 class="hero-headline"></h1>
                     <p class="sub-text">
-                        Hi, I'm <span class="name-badge">Daniel Offei</span>. A Backend Web Developer specializing in Python, Django, Django REST Framework, REST APIs, Database
+                        Hi, I'm <span class="name-badge">Daniel Offei</span>. A Backend Web Developer specializing in
+                        Python, Django, Django REST Framework, REST APIs, Database
                         Architecture, and Business Web Applications with a strong foundation in frontend development in
                         HTML, CSS and JavaScript.
                     </p>
@@ -54,29 +57,23 @@
 
                 <div class="cta-link-container">
                     <a href="https://wa.me/233540758576" target="_blank" class="whatsapp-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path
-                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                         </svg>
                         Message me
                     </a>
 
                     <a href="#services" class="service-link">
                         View My Services
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                         </svg>
                     </a>
 
                     <a href="#projects" class="project-link">
                         View My Works
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                         </svg>
                     </a>
                 </div>
@@ -85,43 +82,35 @@
             <img class="main-picture" src="images/Danny_main.jpg" alt="Daniel's picture">
         </section>
 
-        <button class="hamburger-icon" aria-label="Toggle navigation">&#9776;</button>
     </header>
 
     <main>
         <section id="about">
             <h2 class="section-title">About me</h2>
-        
+
             <div class="about-wrapper">
                 <!-- <img src="images/Danny_about.png" alt="Daniel's picture"> -->
-        
+
                 <div class="text-wrapper">
                     <h2>About The Developer Behind the Code</h2>
                     <p>
                         I'm a Certified Backend Developer through the <a href="https://www.alxafrica.com" target="_blank">ALX
                         Backend Engineering Program</a>, specializing in building secure,
-                        scalable, and maintainable backend systems that solve real business problems. I design RESTful APIs,
-                        architect backend
-                        applications, manage relational databases, and write clean, reliable code that businesses can
-                        confidently build upon.
-                        With additional certifications in Responsive Web Design and JavaScript Algorithms & Data Structures from
-                        <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>, I
-                        also understand the frontend, enabling me to build backend solutions that integrate seamlessly with
-                        modern user
-                        interfaces.
+                        scalable, and maintainable backend systems that solve real business problems. I design RESTful
+                        APIs, architect backend applications, manage relational databases, and write clean, reliable code that businesses can
+                        confidently build upon. With additional certifications in Responsive Web Design and JavaScript Algorithms & Data
+                        Structures from <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>, I
+                        also understand the frontend, enabling me to build backend solutions that integrate seamlessly with modern user interfaces.
                     </p>
-        
+
                     <p>
-                        I've applied these skills by developing real-world projects, including a Personal Finance & Budgeting
-                        API, an E-commerce
-                        API, a Social Media API, a Text Analyzer, and this portfolio website. Whether you're launching a new
-                        product or
-                        enhancing an existing one, I focus on delivering well-engineered, thoroughly tested software backed by
-                        clear
+                        I've applied these skills by developing real-world projects, including a Personal Finance & Budgeting API, an E-commerce API, 
+                        a Social Media API, a Text Analyzer, and this portfolio website. Whether you're launching a new product or 
+                        enhancing an existing one, I focus on delivering well-engineered, thoroughly tested software backed by clear 
                         communication, dependable collaboration, and long-term maintainability.
                     </p>
                 </div>
-        
+
                 <aside class="about-aside">
                     <div class="availability-stack">
                         <span class="work-span">
@@ -131,30 +120,29 @@
                             </svg>
                             Open to Work
                         </span>
-        
+
                         <span class="location-span">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                             </svg>
                             Accra, Ghana
                         </span>
                     </div>
-        
+
                     <div class="metric-cards-wrapper">
                         <div class="metric-cards">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                                 class="bi bi-clock" viewBox="0 0 16 16">
-                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
                             </svg>
                             <h3>2 <p>+</p>
                             </h3>
                             <small>Years Building Software Solutions</small>
                         </div>
-        
+
                         <div class="metric-cards">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                                 class="bi bi-patch-check" viewBox="0 0 16 16">
@@ -167,7 +155,7 @@
                             </h3>
                             <small>Certifications Acquired</small>
                         </div>
-        
+
                         <div class="metric-cards">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                                 class="bi bi-code" viewBox="0 0 16 16">
@@ -178,12 +166,13 @@
                             </h3>
                             <small>Projects Completed</small>
                         </div>
-        
+
                         <div class="metric-cards">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                                 class="bi bi-stopwatch" viewBox="0 0 16 16">
                                 <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
                             </svg>
                             <h3>
                                 <p><</p> 24
@@ -191,7 +180,7 @@
                             <small>Hours Response Time</small>
                         </div>
                     </div>
-        
+
                     <div class="about-cta-wrapper">
                         <a href="assets/Daniel_Offei_resume.pdf" class="resume-link" download>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -203,7 +192,7 @@
                             </svg>
                             Download Resume
                         </a>
-        
+
                         <a href="#contact" class="contact-link">
                             Let's Work Together
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -219,26 +208,26 @@
 
         <section id="services">
             <h2 class="section-title">My Services</h2>
-        
+
             <div class="service-headline-wrapper">
                 <h2>Backend Solutions That Help Businesses Scale</h2>
-        
+
                 <p>
-                    From custom backend systems and RESTful APIs to secure authentication and database architecture, I build
+                    From custom backend systems and RESTful APIs to secure authentication and database architecture, I
+                    build
                     reliable software
-                    solutions that solve real business problems, improve performance, and support log-term business growth.
+                    solutions that solve real business problems, improve performance, and support log-term business
+                    growth.
                 </p>
-        
+
                 <a href="#contact" class="service-cta-link">
                     Let's Discuss Your Project
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                     </svg>
                 </a>
             </div>
-        
+
             <div class="service-content-wrapper">
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -249,12 +238,12 @@
                         <line x1="6" x2="6.01" y1="6" y2="6" />
                         <line x1="6" x2="6.01" y1="18" y2="18" />
                     </svg>
-        
+
                     <h3>Custom Backend Development</h3>
                     <p>Robust, tailor-made server solutions designed to handle high traffic and complex business logic
                         efficiently.</p>
                 </div>
-        
+
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -264,21 +253,23 @@
                         <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8" />
                     </svg>
                     <h3>REST API Development</h3>
-                    <p>Well-documented, secure and fast RESTful APIs to connect your frontend, mobile apps or third-party
+                    <p>Well-documented, secure and fast RESTful APIs to connect your frontend, mobile apps or
+                        third-party
                         services seamlessly.</p>
                 </div>
-        
+
                 <div class="service-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database"
-                        viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-database" viewBox="0 0 16 16">
                         <path
                             d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525" />
                     </svg>
                     <h3>Database Design</h3>
-                    <p>Optimized relational database schemas built for performance, data integrity, scalability, and long-term
+                    <p>Optimized relational database schemas built for performance, data integrity, scalability, and
+                        long-term
                         maintainability.</p>
                 </div>
-        
+
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-shield-check" viewBox="0 0 16 16">
@@ -288,10 +279,11 @@
                             d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
                     </svg>
                     <h3>Authentication & Security</h3>
-                    <p>Secure authentication and authorization with JWT, OAuth, role-based access control, and industry-standard
+                    <p>Secure authentication and authorization with JWT, OAuth, role-based access control, and
+                        industry-standard
                         security practices.</p>
                 </div>
-        
+
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -306,7 +298,7 @@
                     <p>Seamless integration of payment gateways, cloud services, and third-party APIs into your existing
                         applications.</p>
                 </div>
-        
+
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -315,10 +307,11 @@
                             d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
                     </svg>
                     <h3>Maintenance & Optimization</h3>
-                    <p>Continuous monitoring, performance optimization, bug fixes, and feature enhancements to keep your systems
+                    <p>Continuous monitoring, performance optimization, bug fixes, and feature enhancements to keep your
+                        systems
                         reliable and efficient.</p>
                 </div>
-        
+
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -329,10 +322,11 @@
                         <rect width="6" height="10" x="16" y="12" rx="2" />
                     </svg>
                     <h3>Responsive Website Development</h3>
-                    <p>Responsive, fast, and accessible websites built with HTML, CSS, and JavaScript for a seamless user
+                    <p>Responsive, fast, and accessible websites built with HTML, CSS, and JavaScript for a seamless
+                        user
                         experience across all devices.</p>
                 </div>
-        
+
                 <div class="service-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -342,7 +336,8 @@
                         <rect width="8" height="8" x="13" y="13" rx="2" />
                     </svg>
                     <h3>Frontend & Backend Integration</h3>
-                    <p>Connect responsive user interfaces to secure backend APIs for smooth, reliable, and data-driven web
+                    <p>Connect responsive user interfaces to secure backend APIs for smooth, reliable, and data-driven
+                        web
                         applications.</p>
                 </div>
             </div>
@@ -851,7 +846,7 @@
                                 </svg>
                             </a>
 
-                            <a href="http://www.youtube.com/@DannyTechStudio" title="YouTube" class="youtube-link"
+                            <a href="https://www.youtube.com/@DannyTechStudio" title="YouTube" class="youtube-link"
                                 target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-youtube" viewBox="0 0 16 16">
