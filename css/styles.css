@@ -27,6 +27,14 @@
     --footer-link-color: rgb(0, 51, 115);
 }
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -156,7 +164,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    padding: 10px 5rem;
+    padding: 10px 3rem;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -170,6 +178,22 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     width: 50%;
+}
+
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    top: 10rem;
+    right: 10rem;
+    width: 100%;
+    background-color: rgb(3, 0, 15);
+    padding: 10px 20px;
+    width: 90px;
+    border-radius: 10px;
 }
 
 nav ul li {
@@ -191,7 +215,7 @@ nav ul li a.active {
 }
 
 main {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,7 +266,7 @@ section {
 }
 
 .hero-text-container h1,
-p {
+.hero-text-container p {
     margin: 0;
 }
 
@@ -431,7 +455,7 @@ p {
     align-items: flex-start;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 10px 10px;
+    padding: 10px;
     width: auto;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -448,7 +472,7 @@ p {
 }
 
 .metric-cards h3,
-p {
+.metric-cards p {
     padding: 0;
     margin: 0;
 }
@@ -578,8 +602,8 @@ p {
 }
 
 .service-card svg,
-h3,
-p {
+.service-card h3,
+.service-card p {
     margin: 0;
 }
 
@@ -588,8 +612,8 @@ p {
 }
 
 .service-card svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 8px;
     color: var(--custom-cyan);
     border: 1px solid var(--faded-border-color);
@@ -671,7 +695,7 @@ p {
     justify-content: center;
     gap: 0;
     width: 25%;
-    padding: 10px;
+    padding: 10px 20px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.111);
@@ -688,9 +712,6 @@ p {
 
 .skill-list li {
     list-style: disc;
-}
-
-.skill-list li {
     color: var(--text-color);
 }
 
@@ -700,6 +721,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .skill-list li small {
@@ -718,7 +740,7 @@ p {
 .projects-container,
 .certificate-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     justify-content: flex-start;
     width: 100%;
@@ -914,6 +936,10 @@ p {
     color: var(--custom-cyan);
 }
 
+.contact-service-wrapper ul {
+    padding: 5px 25px;
+}
+
 .contact-service-wrapper ul li {
     color: var(--text-color);
 }
@@ -1000,7 +1026,7 @@ form {
 
 .form-headline-wrapper h3 {
     color: var(--custom-cyan);
-    padding: 5px;
+    padding: 20px 0;
     margin-bottom: 0;
 }
 
@@ -1028,7 +1054,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0;
     border: none;
     border-radius: 5px;
@@ -1111,9 +1137,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 0;
-    padding: 0 100px;
+    padding: 0 3rem;
     border-top: 1px solid var(--border-color);
-    margin-top: 0;
 }
 
 .footer-main-wrapper {
