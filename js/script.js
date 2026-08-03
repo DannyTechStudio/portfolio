@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Hamburger Fucntionality
     -----------------------------------------------*/
     const hamburger = document.querySelector('.hamburger-icon');
-    const nav = document.querySelector("nav");
+    const nav = document.querySelector("nav ul");
     
     hamburger.addEventListener("click", () => {
         nav.classList.toggle('active');
