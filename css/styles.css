@@ -79,7 +79,11 @@ h3 {
 
 p,
 a {
-    font-size: 1.125rem;
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.3;
 }
 
 .title-part-one {
@@ -180,22 +184,6 @@ nav ul {
     width: 50%;
 }
 
-nav ul.active {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.5rem;
-    position: relative;
-    top: 10rem;
-    right: 10rem;
-    width: 100%;
-    background-color: rgb(3, 0, 15);
-    padding: 10px 20px;
-    width: 90px;
-    border-radius: 10px;
-}
-
 nav ul li {
     list-style: none;
 }
@@ -235,8 +223,7 @@ section {
     justify-content: space-between;
     width: 100%;
     min-height: 100vh;
-    padding-top: 80px;
-    padding-bottom: 0;
+    padding: 80px 0;
 }
 
 #home .hero-content {
@@ -300,7 +287,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 60%;
 }
 
 .cta-link-container a {
@@ -311,11 +298,12 @@ section {
 .service-link,
 .whatsapp-link,
 .project-link {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.5rem; */
     width: max-content;
+    text-align: center;
     padding: 8px 15px;
     color: var(--text-color);
     border: 1px solid var(--border-color);
@@ -460,7 +448,7 @@ section {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.114);
-    transition: tramsform 0.3s;
+    transition: tramsform 0.2s;
 }
 
 .metric-cards:hover {
@@ -507,6 +495,7 @@ section {
     align-items: center;
     gap: 0.5rem;
     width: max-content;
+    text-align: center;
     text-decoration: none;
     padding: 10px 16px;
 }
