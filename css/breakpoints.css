@@ -1,7 +1,6 @@
-/* ===========================
-    Mobile
-=========================== */
-
+/*----------------------------
+    Mobile View
+-----------------------------*/
 @media (max-width: 480px) {
     *,
     *::before,
@@ -293,3 +292,324 @@
     }
 
 }
+
+
+/*----------------------------
+    Large Phones & Small Tablets
+-----------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    p, a {
+        font-size: 1.125rem;
+    }
+
+    body,
+    header,
+    main,
+    footer {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 100%;
+        padding: 65px 10px;
+    }
+    
+    nav {
+        position: fixed;
+        padding: 10px 3rem;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #000004;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    nav ul,
+    .nav-contact-link {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #home {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 50px 0;
+    }
+
+    #home .hero-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-text-container {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .hero-headline {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .sub-text {
+        width: 100%;
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+
+    .main-picture {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+    }
+
+    .cta-link-container {
+        width: 100%;
+        justify-content: center;
+        gap: .8rem;
+    }
+
+    .resume-link,
+    .service-link,
+    .project-link,
+    .whatsapp-link {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .text-wrapper h2 {
+        margin: 0;
+    }
+
+    .text-wrapper p {
+        font-size: 1.125rem;
+    }
+
+    .about-aside {
+        width: 100%;
+        gap: 1rem;
+        padding: 10px 0;
+    }
+
+    .availability-stack {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .metric-cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        padding: 0 10px;
+    }
+
+    .metric-cards {
+        padding: 5px 10px;
+        gap: 0;
+    }
+
+    .metric-cards h3 {
+        font-size: 2rem;
+    }
+
+    .metric-cards svg {
+        display: none;
+    }
+
+    .about-cta-wrapper {
+        width: 100%;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    .about-cta-wrapper a {
+        width: 35%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #services .section-title {
+        margin: 20px;
+    }
+
+    .service-headline-wrapper,
+    .section-headline-wrapper {
+        width: 100%;
+        padding: 0 10px;
+        gap: 1rem;
+    }
+
+    .service-headline-wrapper {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .service-headline-wrapper h2,
+    .service-headline-wrapper p,
+    .section-headline-wrapper h2,
+    .section-headline-wrapper p {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .service-headline-wrapper p,
+    .section-headline-wrapper p {
+        font-size: 1.125rem;
+    }
+
+    .service-headline-wrapper a {
+        width: 50%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .service-content-wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+        width: 95%;
+    }
+
+    .filter-tabs {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .filter-btn,
+    .project-filter-btn {
+        width: 120px;
+        width: auto;
+        width: max-content;
+        text-align: center;
+        padding: 5px 10px;
+        border: none;
+        border: 1px solid white;
+        border-radius: 50px;
+    }
+
+    .skills-main-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .projects-container,
+    .certificate-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        width: 95%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-headline-wrapper {
+        gap: 0.5rem;
+    }
+
+    .contact-headline-wrapper h2 {
+        line-height: 1.1;
+    }
+
+    .contact-wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #contact-form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .form-headline-wrapper,
+    .form-content {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    #contact-form .fieldset-wrapper {
+        width: 100%;
+    }
+
+    #contact-form fieldset {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .footer-main-wrapper {
+        width: 100%;
+    }
+
+    .footer-links {
+        display: none;
+    }
+}
+
+
+/*----------------------------
+Tablets & Small Laptops
+-----------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {}
+
