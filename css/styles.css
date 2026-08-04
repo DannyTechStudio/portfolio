@@ -835,7 +835,7 @@ section {
 }
 
 .certificate-card {
-    justify-content: space-evenly;
+    height: max-content;
 }
 
 .cert-details-wrapper {
