@@ -2,14 +2,6 @@
     Mobile View
 -----------------------------*/
 @media (max-width: 480px) {
-    *,
-    *::before,
-    *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     p, a {
         font-size: 1rem;
     }
@@ -298,14 +290,6 @@
     Large Phones & Small Tablets
 -----------------------------*/
 @media (min-width: 481px) and (max-width: 768px) {
-    *,
-    *::before,
-    *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     p, a {
         font-size: 1.125rem;
     }
@@ -611,5 +595,299 @@
 /*----------------------------
 Tablets & Small Laptops
 -----------------------------*/
-@media (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 769px) and (max-width: 1024px) {
+    p,
+    a {
+        font-size: 1.125rem;
+    }
+
+    body,
+    header,
+    main,
+    footer {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 100%;
+        padding: 65px 20px;
+        /* border: 1px solid white; */
+    }
+    
+    nav {
+        width: 100%;
+        height: 70px;
+        padding: 0 2rem;
+    }
+
+    .logo-text {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        width: 58%;
+    }
+    
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: .95rem;
+    }
+
+    .nav-contact-link {
+        display: none;
+    }
+
+    #home {
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 90px 2rem 3rem;
+    }
+    
+    #home .hero-content {
+        width: 58%;
+    }
+
+    .hero-text-container {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .hero-headline {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .sub-text {
+        width: 100%;
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+
+    .main-picture {
+        width: 38%;
+        max-width: 380px;
+        height: auto;
+    }
+
+    .cta-link-container {
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .resume-link,
+    .service-link,
+    .project-link,
+    .whatsapp-link {
+        width: max-content;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .text-wrapper h2 {
+        margin: 0;
+    }
+
+    .text-wrapper p {
+        font-size: 1.125rem;
+    }
+
+    .about-aside {
+        width: 100%;
+        gap: 1rem;
+        padding: 10px 0;
+    }
+
+    .availability-stack {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .metric-cards-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .metric-cards {
+        padding: 5px 10px;
+        padding: 1rem;
+        gap: 0;
+    }
+
+    .metric-cards h3 {
+        font-size: 2.5rem;
+    }
+
+    .metric-cards svg {
+        display: none;
+    }
+
+    .about-cta-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    .about-cta-wrapper a {
+        width: max-content;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #services .section-title {
+        margin: 20px;
+    }
+
+    .service-headline-wrapper,
+    .section-headline-wrapper {
+        width: 100%;
+        padding: 0 10px;
+        gap: 1rem;
+    }
+
+    .service-headline-wrapper {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .service-headline-wrapper h2,
+    .service-headline-wrapper p,
+    .section-headline-wrapper h2,
+    .section-headline-wrapper p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-headline-wrapper p,
+    .section-headline-wrapper p {
+        font-size: 1.125rem;
+    }
+
+    .service-headline-wrapper a {
+        width: 30%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .service-content-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .filter-tabs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .filter-btn,
+    .project-filter-btn {
+        width: max-content;
+        text-align: center;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .skills-main-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .projects-container,
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .contact-headline-wrapper {
+        gap: 0.5rem;
+    }
+
+    .contact-headline-wrapper h2 {
+        line-height: 1.1;
+    }
+
+    .contact-wrapper {
+        width: 45%;
+        padding: 0 10px;
+    }
+
+    #contact-form {
+        width: 55%;
+        padding: 1.5rem;
+    }
+
+    .form-headline-wrapper,
+    .form-content {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    #contact-form .fieldset-wrapper {
+        width: 100%;
+    }
+
+    #contact-form fieldset {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    footer {
+        padding: 20px 3rem;
+    }
+
+    .footer-main-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        display: flex;
+    }
+}
 
