@@ -298,10 +298,6 @@ section {
 .service-link,
 .whatsapp-link,
 .project-link {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem; */
     width: max-content;
     text-align: center;
     padding: 8px 15px;
@@ -838,8 +834,12 @@ section {
     color: var(--custom-cyan);
 }
 
+.certificate-card {
+    justify-content: space-evenly;
+}
+
 .cert-details-wrapper {
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 .cert-details-wrapper h3 {
