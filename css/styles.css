@@ -972,6 +972,10 @@ section {
     color: var(--custom-black);
 }
 
+.links-wrapper a svg:hover {
+    color: var(--body-bg-color);
+}
+
 .links-wrapper .gmail-link:hover {
     background-color: #f51919;
 }
