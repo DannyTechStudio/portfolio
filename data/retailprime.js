@@ -12,7 +12,7 @@ const projectData = {
     projectType: "Persoanl Project",
     
     liveDemo: "",
-    github: "",
+    github: "https://github.com/DannyTechStudio/ecommerce_project.git",
     
     technologies: [
         "Python",
