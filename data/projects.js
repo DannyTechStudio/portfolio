@@ -1,16 +1,17 @@
 const projectData = {
+
     retailprime: {
         id: "retailprime",
 
         title: "RetailPrime",
-        category: "Backend Project",
+        category: "● Backend Project",
         shortDescription: "A single-vendor eCommerce backend that streamlines online retail through secure APIs, inventory management, Paystack payments, and order processing.",
         longDescription: "RetailPrime is a scalable backend solution built for modern online retail businesses. It provides secure RESTful APIs for product management, customer accounts, shopping carts, orders, payments, inventory tracking, coupons, reviews, and order fulfillment.",
         status: "Completed",
         featured: true,
         role: "Backend Developer",
         duration: "6 weeks",
-        projectType: "Persoanl Project",
+        projectType: "Personal Project",
 
         liveDemo: "",
         github: "https://github.com/DannyTechStudio/ecommerce_project.git",
@@ -48,7 +49,7 @@ const projectData = {
             }
         ],
 
-        overview: "RetailPrime demonstrates my ability to design and build production-ready backend systems for eCommerce applications. The project emphasizes modular architecture, secure authentication, clean REST API design, relational database modeling, payment integration, and maintainable code structure.",
+        overview: "RetailPrime demonstrates my ability to design and build production-ready backend systems for modern eCommerce applications. The project was developed with a strong focus on creating a modular and maintainable architecture capable of supporting essential online retail operations, including product management, inventory tracking, shopping carts, order processing, customer interactions, and payments. It emphasizes secure JWT-based authentication, clean RESTful API design, well-structured relational database models, and Paystack payment integration. Beyond implementing individual features, the project reflects my approach to solving real-world backend challenges by separating responsibilities, designing reusable components, and building a system that can be extended as business requirements evolve.",
 
         problem: "Small and medium-sized retailers need a centralized backend capable of managing products, inventory, customers, shopping carts, payments, coupons, reviews, and orders securely without relying on fragmented systems.",
 
@@ -192,4 +193,4 @@ const projectData = {
 
         ],
     }
-};  
+};
