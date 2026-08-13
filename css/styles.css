@@ -807,7 +807,6 @@ section {
     width: 100%;
 }
 
-.project-link-wrapper button,
 .project-link-wrapper a {
     display: flex;
     align-items: center;
@@ -818,18 +817,11 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.project-link-wrapper button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .project-link-wrapper a {
     text-decoration: none;
     font-size: 14px;
 }
 
-.project-link-wrapper button:hover,
 .project-link-wrapper a:hover {
     color: var(--custom-cyan);
 }
