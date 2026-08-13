@@ -109,28 +109,83 @@ const projectData = {
             tools: [
                 "Git",
                 "GitHub",
-                "Postman"
+                "Postman",
+                "Draw.io"
             ]
 
         },
 
-        architectureDescription: "RetailPrime follows a layered backend architecture that separates API endpoints, authentication, business logic, and database operations into reusable components.",
+        architectureDescription: "RetailPrime follows a layered backend architecture where client applications communicate with Django REST Framework through HTTPS-based REST APIs. Authentication and permission checks protect secured resources before requests reach the appropriate business logic, which manages products, carts, inventory, orders, and payments. The application persists relational data in MySQL and integrates with Paystack for payment processing.",
 
         architectureImage: "./images/retailprime-architecture.png",
 
         challenges: [
-            {
-                challenge: "Designing an extensible database structure capable of supporting products, inventory, orders, payments, coupons, and reviews.",
 
-                solution: "Designed normalized relational models with reusable relationships to simplify future expansion."
+            {
+                challenge:
+                    "Designing an extensible database structure capable of supporting products, inventory, orders, payments, coupons, and reviews.",
+            
+                solution:
+                    "Designed normalized relational models with reusable relationships to simplify future expansion."
+            },
+        
+            {
+                challenge:
+                    "Ensuring secure access to protected resources and preventing unauthorized users from accessing sensitive operations.",
+            
+                solution:
+                    "Implemented JWT authentication with permission-based access control across secured endpoints."
+            },
+        
+            {
+                challenge:
+                    "Managing inventory accurately as customers add products to carts, complete purchases, or cancel orders.",
+            
+                solution:
+                    "Designed inventory logic that tracks product availability and updates stock levels as orders are processed."
+            },
+        
+            {
+                challenge:
+                    "Integrating an external payment gateway while keeping payment processing secure and reliable.",
+            
+                solution:
+                    "Integrated Paystack to handle payment processing and structured the payment workflow to verify transactions before completing orders."
+            },
+        
+            {
+                challenge:
+                    "Designing RESTful API endpoints that remain consistent, predictable, and easy for frontend or client applications to consume.",
+            
+                solution:
+                    "Applied REST principles with organized URL structures, appropriate HTTP methods, serializers, and consistent response handling."
+            },
+        
+            {
+                challenge:
+                    "Keeping the backend codebase modular and maintainable as the number of features and API endpoints increased.",
+            
+                solution:
+                    "Organized functionality into reusable components and separated responsibilities across models, serializers, views, authentication, and business logic."
+            },
+        
+            {
+                challenge:
+                    "Verifying that API endpoints behave correctly across successful requests, invalid inputs, authentication failures, and different resource operations.",
+            
+                solution:
+                    "Tested the REST API extensively with Postman to validate endpoints, request data, authentication, responses, and common error scenarios."
             },
 
             {
-                challenge: "Ensuring secure access to protected resources.",
-
-                solution: "Implemented JWT authentication with permission-based access control across secured endpoints."
-            }
-        ],
+                challenge:
+                    "Managing the relationships between users, carts, products, orders, payments, reviews, and other related resources without creating unnecessary complexity.",
+            
+                solution:
+                    "Used Django's relational modeling capabilities and carefully structured model relationships to maintain data integrity and simplify resource management."
+            },
+        
+        ],       
 
         contributions: [
             "Designed the complete database schema.",
@@ -145,7 +200,7 @@ const projectData = {
 
             "Created reusable serializers and API views.",
 
-            "Tested endpoints using Postman."
+            "Tested API endpoints using Postman."
         ],
 
         screenshots: [],
