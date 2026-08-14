@@ -163,7 +163,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 1rem; */
 }
 
 .hero-content-wrapper span {
@@ -188,7 +187,7 @@ p {
 }
 
 .project-meta-wrapper {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -223,9 +222,19 @@ p {
 .metrics-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
     margin: 10px 0;
     transition: all 0.3s ease-in-out;
+}
+
+.tech-pills-wrapper {
+    width: 90%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tech-pill {
+    width: max-content;
+    padding: 2px 10px;
 }
 
 .tech-pill:hover {
@@ -243,6 +252,7 @@ p {
     align-items: flex-start;
     gap: 0.5rem;
     width: 180px;
+    width: max-content;
     padding: 5px 20px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -255,7 +265,7 @@ p {
 }
 
 .metric-title {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--custom-cyan);
 }
 
@@ -273,7 +283,7 @@ main {
 }
 
 #problem-solution {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -486,6 +496,11 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 1rem;
+}
+
+.contributions-wrapper {
+    width: 50%;
 }
 
 #contributions-list {
