@@ -743,8 +743,34 @@ section {
 
 .project-img-wrapper,
 .cert-img-wrapper {
+    position: relative;
     overflow: hidden;
     flex-shrink: 0;
+}
+
+.project-status {
+    width: max-content;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 10px;
+}
+
+.project-status.completed {
+    color: var(--custom-black);
+    background-color: rgb(4, 253, 4);
+}
+
+.project-status.ongoing {
+    background-color: var(--custom-orange);
 }
 
 .project-img-wrapper img,
