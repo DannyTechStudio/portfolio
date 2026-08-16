@@ -563,6 +563,7 @@ main {
 }
 
 .project-nav button.disabled {
+    cursor: not-allowed;
     color: var(--faded-text);
     background-color: transparent;
 }
