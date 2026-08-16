@@ -285,7 +285,7 @@ const projectData = {
 
         role: "Full-Stack Developer",
 
-        duration: "Onging",
+        duration: "Ongoing",
 
         year: "2026",
 
@@ -409,6 +409,8 @@ const projectData = {
         
         architectureImage: "./images/purselens_backend_architecture_design.png",
 
+        architectureDesignImgAltText: "PurseLens architecture image",
+
         challenges: [
 
             {
@@ -502,19 +504,19 @@ const projectData = {
         lessons: [
             "Good database design is essential when building systems around interconnected financial data.",
 
-        "Business logic should be carefully separated from basic CRUD operations when an application requires meaningful calculations.",
-
-        "Financial applications require consistent validation and calculation logic to maintain data accuracy.",
-
-        "Designing APIs around clear resources makes backend systems easier for frontend applications to consume.",
-
-        "Authentication and data ownership should be considered from the beginning when handling user-specific financial information.",
-
-        "Integrating multiple authentication strategies requires careful consideration of user identity and authentication flows.",
-
-        "Building a full-stack application provides a deeper understanding of how frontend and backend systems communicate and depend on one another.",
-
-        "Real-world applications require more than CRUD operations; meaningful business rules and data processing are what make a system useful."
+            "Business logic should be carefully separated from basic CRUD operations when an application requires meaningful calculations.",
+            
+            "Financial applications require consistent validation and calculation logic to maintain data accuracy.",
+            
+            "Designing APIs around clear resources makes backend systems easier for frontend applications to consume.",
+            
+            "Authentication and data ownership should be considered from the beginning when handling user-specific financial information.",
+            
+            "Integrating multiple authentication strategies requires careful consideration of user identity and authentication flows.",
+            
+            "Building a full-stack application provides a deeper understanding of how frontend and backend systems communicate and depend on one another.",
+            
+            "Real-world applications require more than CRUD operations; meaningful business rules and data processing are what make a system useful."
         ],
 
         futureImprovements: [
