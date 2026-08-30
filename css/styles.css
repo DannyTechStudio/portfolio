@@ -77,12 +77,12 @@ h3 {
     font-size: 1.25rem;
 }
 
-p,
 a {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 p {
+    font-size: 1.125rem;
     line-height: 1.3;
 }
 
@@ -128,6 +128,7 @@ header {
     justify-content: center;
     margin: 0;
     font-size: 1.25rem;
+    font-weight: 900;
 }
 
 .title-part-one {
@@ -140,11 +141,12 @@ header {
 
 .nav-contact-link {
     width: max-content;
-    padding: 5px 10px;
+    padding: 8px 10px;
     color: var(--text-color);
+    font-weight: 700;
     text-decoration: none;
     border: 1px solid var(--border-color);
-    border-radius: 50px;
+    border-radius: 8px;
     color: var(--custom-black);
     background-color: var(--custom-orange);
 }
@@ -168,7 +170,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    padding: 10px 3rem;
+    padding: 15px 10rem;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -177,11 +179,19 @@ nav {
     box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.077);
 }
 
+.nav-links-wrapper {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 75%;
 }
 
 nav ul li {
@@ -195,10 +205,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    font-weight: 700;
     color: var(--custom-cyan);
 }
 
 nav ul li a.active {
+    font-weight: 700;
     color: var(--custom-cyan);
 }
 
@@ -240,7 +252,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .hero-text-container .hero-badge {
@@ -267,6 +279,7 @@ section {
     line-height: 60px;
     color: var(--text-color);
     opacity: 1;
+    font-weight: 900;
     transition: opacity 2s ease;
 }
 
@@ -350,6 +363,10 @@ section {
     border: 1px solid var(--border-color);
     border-radius: 50px;
     margin: 0;
+}
+
+.section-headline {
+    font-weight: 900;
 }
 
 #about {
@@ -921,7 +938,6 @@ section {
 }
 
 .contact-headline-wrapper h2 {
-    font-weight: 600;
     color: var(--custom-cyan);
     padding-bottom: 10px;
 }
