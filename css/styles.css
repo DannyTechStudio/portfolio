@@ -314,6 +314,7 @@ section {
     width: max-content;
     text-align: center;
     padding: 8px 15px;
+    font-weight: 700;
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 50px;
@@ -566,6 +567,7 @@ section {
     text-decoration: none;
     width: max-content;
     padding: 10px 20px;
+    font-weight: 700;
     border-radius: 50px;
     color: var(--custom-black);
     background-color: var(--custom-orange);
@@ -677,6 +679,7 @@ section {
 .filter-btn:hover,
 .project-filter-btn.active,
 .project-filter-btn:hover {
+    font-weight: 700;
     background: var(--input-bg-color);
     color: var(--custom-black);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1052,6 +1055,7 @@ form {
 }
 
 .form-headline-wrapper h3 {
+    font-weight: 900;
     color: var(--custom-cyan);
     padding: 20px 0;
     margin-bottom: 0;
