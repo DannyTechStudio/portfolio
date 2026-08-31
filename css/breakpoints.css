@@ -23,12 +23,16 @@
         position: fixed;
         padding: 10px;
     }
-
+    
     .logo-text {
         font-size: 1rem;
     }
 
-    nav ul.active {
+    .nav-links-wrapper {
+        width: 10%;
+    }
+
+    .nav-links-wrapper ul.active {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -45,7 +49,7 @@
         padding: 10px;
     }
 
-    nav ul, 
+    nav ul,
     .nav-contact-link {
         display: none;
     }
@@ -316,6 +320,10 @@
     nav {
         position: fixed;
         padding: 10px 3rem;
+    }
+
+    .nav-links-wrapper {
+        width: 10%;
     }
 
     .logo-text {
@@ -618,13 +626,16 @@ Tablets & Small Laptops
     section {
         width: 100%;
         padding: 65px 20px;
-        /* border: 1px solid white; */
     }
     
     nav {
         width: 100%;
         height: 70px;
         padding: 0 2rem;
+    }
+
+    .nav-links-wrapper {
+        width: 10%;
     }
 
     .logo-text {
