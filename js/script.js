@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     -----------------------------------------------*/
     const heroHeadlineTexts = [
         "I Build <span class='accent'>Secure, Scalable</span> Backend Systems That Power Modern Businesses.",
-        "I Design, Build, and Optimize <span class='accent'>Backend Solutions</span> for Modern Digital Products.",
+        "I Design, Build, & Optimize <span class='accent'>Backend Solutions</span> for Modern Digital Products.",
         "I Create <span class='accent'>Secure APIs</span> and Database Solutions Businesses Can Depend On.",
         "I Help Businesses <span class='accent'>Build Faster, Scale Smarter</span>, and Grow with Technology.",
         "I Turn Business Ideas into <span class='accent'>Secure Backend Solutions</span> for Web and Mobile Apps."
@@ -77,4 +77,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval(changeHeadline, displayTime + fadeTime);
-});   
+});
+
+
+/*-----------------------------------------------
+        Dynamic Hero Headline Fucntionality
+-----------------------------------------------*/
+const revealElements = document.querySelectorAll(".reveal");
+const revealObjects = new IntersectionObserver((entries) => {
+    
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("in"); });
+    
+}, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+revealElements.forEach(el => revealObjects.observe(el));
