@@ -405,7 +405,7 @@ const projectData = {
 
         },
 
-        architectureDescription: "PurseLens follows a full-stack architecture where the web frontend communicates with the Django REST Framework backend through RESTful APIs. Incoming requests to protected resources pass through authentication and permission controls before reaching the application's business logic. The backend handles transaction, category, budget, and analytics operations before interacting with MySQL for persistent data storage. JWT authentication is used for API authorization, while Django Allauth and OAuth provide social authentication capabilities such as Google login. The frontend consumes the backend APIs and presents financial information through the application's web interface.",
+        architectureDescription: "PurseLens follows a 3-tier architectural pattern where the web frontend communicates with the Django REST Framework backend through secure RESTful APIs. Incoming requests to protected resources pass through authentication and permission controls before reaching the application's business logic. The backend handles transaction, category, budget, and analytics operations before interacting with MySQL for persistent data storage. JWT authentication is used for API authorization, while Django Allauth and OAuth provide social authentication capabilities such as Google login. The frontend consumes the backend APIs and presents financial information through the application's web interface.",
         
         architectureImage: "./images/purselens_backend_architecture_design.png",
 
