@@ -842,7 +842,7 @@ section {
     gap: 14px;
     flex: 1;
     padding: 20px 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.234);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.234); */
 }
 
 .project-details-wrapper h3 {
@@ -860,9 +860,13 @@ section {
 .stack-wrapper span {
     padding: 3px 12px;
     font-size: 12px;
-    color: var(--text-color);
+    color: var(--custom-orange);
     border: 1px solid var(--border-color);
     border-radius: 50px;
+}
+
+.stack-wrapper span:hover {
+    background-color: var(--h2-bg-color);
 }
 
 .project-descriptions {
