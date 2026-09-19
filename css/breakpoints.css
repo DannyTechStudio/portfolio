@@ -25,7 +25,7 @@
     }
     
     .logo-text {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .nav-links-wrapper {
@@ -123,7 +123,7 @@
     }
 
     .text-wrapper h2 {
-        margin: 0;
+        width: 100%;
         line-height: 1;
     }
 
@@ -218,7 +218,7 @@
         text-align: center;
         padding: 5px 10px;
         border: none;
-        border: 1px solid white;
+        border: 1px solid var(--border-color);
         border-radius: 50px;
     }
         
@@ -262,17 +262,11 @@
         padding: 0;
     }
 
-    .form-headline-wrapper,
-    .form-content {
-        width: 100%;
-        padding: 0 5px;
-    }
-    
     #contact-form .fieldset-wrapper {
         width: 100%;
         flex-direction: column;
     }
-
+    
     #contact-form fieldset {
         width: 100%;
         gap: 0.5rem;
@@ -280,13 +274,33 @@
     
     .footer-main-wrapper {
         width: 100%;
+    }
+    
+    .form-headline-wrapper,
+    .form-content {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .footer-headline-wrapper {
+        width: 100%;
+    }
+
+    .footer-top-content {
         flex-direction: column;
+        gap: 2rem;
     }
 
-    .footer-links {
-        display: none;
+    .footer-nav-links-wrapper {
+        justify-content: center;
+        width: 100%;
     }
-
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
 }
 
 
@@ -531,7 +545,7 @@
         text-align: center;
         padding: 5px 10px;
         border: none;
-        border: 1px solid white;
+        border: 1px solid var(--border-color);
         border-radius: 50px;
     }
 
@@ -592,10 +606,28 @@
 
     .footer-main-wrapper {
         width: 100%;
+        align-items: center;
     }
 
-    .footer-links {
-        display: none;
+    .footer-top-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .footer-headline-wrapper {
+        width: 45%;
+    }
+    
+    .footer-nav-links-wrapper {
+        width: 48%;
+    }
+    
+    .footer-bottom-content {
+        width: 90%;
+    }
+
+    .footer-bottom-content small {
+        width: 40%;
     }
 }
 
@@ -630,12 +662,12 @@ Tablets & Small Laptops
     
     nav {
         width: 100%;
-        height: 70px;
+        height: 80px;
         padding: 0 2rem;
     }
 
     .nav-links-wrapper {
-        width: 10%;
+        width: 68%;
     }
 
     .logo-text {
@@ -643,7 +675,7 @@ Tablets & Small Laptops
     }
 
     nav ul {
-        width: 58%;
+        width: 60%;
     }
     
     nav ul li {
@@ -652,10 +684,6 @@ Tablets & Small Laptops
 
     nav ul li a {
         font-size: .95rem;
-    }
-
-    .nav-contact-link {
-        display: none;
     }
 
     #home {
@@ -721,9 +749,10 @@ Tablets & Small Laptops
         align-items: center;
         padding: 0 10px;
     }
-
-    .text-wrapper h2 {
-        margin: 0;
+    
+    .text-wrapper .about-headline {
+        width: 60%;
+        text-align: center;
     }
 
     .text-wrapper p {
@@ -794,7 +823,7 @@ Tablets & Small Laptops
     .service-headline-wrapper p,
     .section-headline-wrapper h2,
     .section-headline-wrapper p {
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
 
@@ -828,7 +857,7 @@ Tablets & Small Laptops
         width: max-content;
         text-align: center;
         padding: 5px 10px;
-        border: none;
+        border: 1px solid var(--border-color);
         border-radius: 50px;
     }
 
@@ -892,13 +921,8 @@ Tablets & Small Laptops
     }
 
     .footer-main-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        width: 100%;
     }
 
-    .footer-links {
-        display: flex;
-    }
 }
 
