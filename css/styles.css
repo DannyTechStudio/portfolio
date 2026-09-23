@@ -1,6 +1,7 @@
 /*--------- Variables ---------*/
 :root {
     --custom-black: #090909;
+    --custom-black: #1a1a1a;
     --body-bg-color: #040112;
     --text-color: #c6c6c7;
     --blue-deep: rgb(11, 11, 85);
@@ -249,8 +250,7 @@ main {
 
 section {
     width: 100%;
-    padding: 85px 0;
-    margin: 0;
+    padding: 100px 0;
 }
 
 #home {
@@ -559,31 +559,14 @@ section {
     background-color: var(--custom-orange);
 }
 
-#services {
+#services,
+#skills,
+#projects,
+#certifications {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.service-headline-wrapper {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-    gap: 1rem;
-}
-
-.service-headline-wrapper h2 {
-    width: 70%;
-    color: var(--custom-cyan);
-}
-
-.service-headline-wrapper p {
-    text-align: center;
-    width: 85%;
 }
 
 .service-cta-link {
@@ -647,32 +630,24 @@ section {
     background-color: var(--faded-border-color);
 }
 
-#skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
 .section-headline-wrapper {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding: 0;
+    gap: 0.5rem;
+    padding:  0 0 25px 0;
 }
 
 .section-headline-wrapper h2 {
     width: 80%;
-    margin: 5px;
+    text-align: center;
     color: var(--custom-cyan);
 }
 
 .section-headline-wrapper p {
-    width: 85%;
+    width: 90%;
     text-align: center;
 }
 
@@ -754,15 +729,6 @@ section {
 
 .skill-list li small {
     color: var(--custom-orange);
-}
-
-#projects,
-#certifications {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
 }
 
 .projects-container,
@@ -1018,20 +984,17 @@ section {
     align-items: center;
     justify-content: center;
     padding: 8px;
-    border: 1px solid var(--border-color);
     border-radius: 50px;
     background-color: white;
 }
 
 .links-wrapper a svg {
-    width: 1.2rem;
-    height: 1.2rem;
-    font-size: 2rem;
     color: var(--custom-black);
 }
 
 .links-wrapper a svg:hover {
     color: var(--body-bg-color);
+    color: white;
 }
 
 .links-wrapper .gmail-link:hover {
