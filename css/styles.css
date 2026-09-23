@@ -1,7 +1,6 @@
 /*--------- Variables ---------*/
 :root {
     --custom-black: #090909;
-    --custom-black: #1a1a1a;
     --body-bg-color: #040112;
     --text-color: #c6c6c7;
     --blue-deep: rgb(11, 11, 85);
@@ -173,8 +172,8 @@ header {
 .nav-contact-link {
     width: max-content;
     padding: 8px 10px;
-    color: var(--text-color);
     text-decoration: none;
+    font-weight: 600;
     border-radius: 8px;
     color: var(--custom-black);
     background-color: var(--custom-orange);
@@ -339,7 +338,7 @@ section {
     gap: 0.3rem;
     text-align: center;
     padding: 10px 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 50px;
@@ -533,6 +532,7 @@ section {
     gap: 0.5rem;
     width: max-content;
     text-align: center;
+    font-weight: 600;
     text-decoration: none;
     padding: 10px 16px;
 }
@@ -571,6 +571,7 @@ section {
 
 .service-cta-link {
     text-decoration: none;
+    font-weight: 600;
     width: max-content;
     padding: 12px 20px;
     border-radius: 10px;
