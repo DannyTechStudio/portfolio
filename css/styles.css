@@ -41,7 +41,6 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Nunito, Times, serif;
-    font-family: Nunito, Verdana;
     background-color: var(--body-bg-color);
     -webkit-font-smoothing: antialiased;
 }
@@ -1256,5 +1255,11 @@ footer {
 
 .footer-bottom-content :nth-child(2) {
     font-style: italic;
+}
+
+.disabled-link {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.3;
 }
 
