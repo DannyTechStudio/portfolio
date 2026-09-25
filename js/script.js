@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
             Dynamic Hero Headline Fucntionality
     -----------------------------------------------*/
     const heroHeadlineTexts = [
-        "I Build <span class='accent'>Secure, Scalable</span> Backend Systems That Power Modern Businesses.",
+        "I Build <span class='accent'>Secure</span> and <span class='accent'>Scalable</span> Backend Systems That Power Modern Businesses.",
         "I Design, Build, & Optimize <span class='accent'>Backend Solutions</span> for Modern Digital Products.",
-        "I Create <span class='accent'>Secure APIs</span> and <span class='accent'>Database Solutions</span> That Businesses Can Depend On.",
+        "I Create <span class='accent'>Secure APIs</span> & <span class='accent'>Database Solutions</span> That Businesses Can Depend On.",
         "I Help Businesses <span class='accent'>Build Faster, Scale Smarter</span>, and Grow with Technology.",
         "I Turn Business Ideas into <span class='accent'>Secure Backend Solutions</span> for Web and Mobile Apps."
     ];
