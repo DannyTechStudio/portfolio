@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
  
-<body>
+<body data-theme="light">
     <div id="particles-js"></div> 
 
     <header>
@@ -38,6 +38,8 @@
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                
+                <button id="theme-toggle-btn" title="Switch Theme"></button>
                 
                 <button class="hamburger-icon" aria-label="Toggle navigation">&#9776;</button>
                 
@@ -943,20 +945,20 @@
 
                         <div class="fieldset-wrapper">
                             <fieldset>
-                                <label for="name-input">Your Name</label>
+                                <label for="name-input" class="required">Your Name</label>
                                 <input type="text" id="name-input" name="name" autocomplete="name"
-                                    placeholder="John Doe" required>
+                                    placeholder="Your name" required>
                             </fieldset>
 
                             <fieldset>
-                                <label for="email-input">Email Address</label>
+                                <label for="email-input" class="required">Email Address</label>
                                 <input type="email" id="email-input" name="email" autocomplete="email"
                                     placeholder="john@example.com" required>
                             </fieldset>
                         </div>
 
                         <fieldset>
-                            <label for="subject-input">Subject</label>
+                            <label for="subject-input" class="required">Subject</label>
                             <select name="subject" id="subject-input" required>
                                 <option value="" selected disabled>Select a subject</option>
                                 <option value="Backend Development">Backend Development</option>
@@ -973,7 +975,7 @@
                         </fieldset>
 
                         <fieldset>
-                            <label for="message-input">Project Details</label>
+                            <label for="message-input" class="required">Project Details</label>
                             <textarea id="message-input" name="message" rows="6"
                                 placeholder="Tell me about your project, goals, timeline, and any specific requirements..."
                                 required></textarea>
