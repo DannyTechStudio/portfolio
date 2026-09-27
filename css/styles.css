@@ -1,5 +1,7 @@
 /*--------- Variables ---------*/
-:root {
+[data-theme='dark'] {
+    --cta-text-color: #fff;
+    --theme-svg-color: #F7F8FA;
     --custom-black: #090909;
     --body-bg-color: #040112;
     --text-color: #c6c6c7;
@@ -16,6 +18,7 @@
     --form-bg-color: rgba(225, 225, 225, 0.51);
     --form-btn-bg-color: #4f7992;
     --input-bg-color: #c2d8ff;
+    --social-icon-color: #1a1a1a;
     --portfolio-link-color: rgb(0, 115, 255);
     --soft-skill-article-bg-color: #d000f5;
     --tech-skill-article-bg-color: #c0e237;
@@ -27,6 +30,37 @@
     --footer-link-color: rgb(0, 51, 115);
 }
 
+[data-theme='light'] {
+    --cta-text-color: #1a1a1a;
+    --theme-svg-color: #1a1a1a;
+    --custom-black: #111318;
+    --body-bg-color: #F7F8FA;
+    --text-color: #252832;
+    --blue-deep: rgb(7, 7, 43);
+    --custom-cyan: #00AFC7;
+    --custom-cyan-hover: #0095AA;
+    --custom-orange: #F47B00;
+    --custom-orange-hover: #D96800;
+    --navbar-color: #FFFFFF;
+    --nav-links-color: #5F6675;
+    --nav-links-hover-color: #00AFC7;
+    --faded-border-color: rgba(20, 25, 35, 0.08);
+    --border-color: rgba(20, 25, 35, 0.16);
+    --form-bg-color: rgba(255, 255, 255, 0.9);
+    --form-btn-bg-color: #3F687F;
+    --input-bg-color: #eef3fa;
+    --social-icon-color: #1a1a1a;
+    --portfolio-link-color: rgb(0, 102, 220);
+    --soft-skill-article-bg-color: #B800D4;
+    --tech-skill-article-bg-color: #8AAA00;
+    --tools-article-bg-color: #00AFC7;
+    --h2-bg-color: rgba(20, 25, 35, 0.055);
+    --modal-bg-color: rgba(0, 0, 0, 0.55);
+    --project-details-container-bg-color: #FFFFFF;
+    --footer-bg-color: #ECEEF3;
+    --footer-link-color: rgb(0, 51, 115);
+}
+    
 *,
 *::before,
 *::after {
@@ -52,7 +86,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #050116;
+    background-color: var(--body-bg-color);
 }
 
 a,
@@ -167,6 +201,26 @@ header {
     color: #FFA500;
 }
 
+#theme-toggle-btn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#theme-toggle-btn:hover {
+    background-color: var(--input-bg-color);
+}
+
+#theme-toggle-btn svg {
+    color: var(--theme-svg-color);
+}
+
 .nav-contact-link {
     width: max-content;
     padding: 8px 10px;
@@ -174,6 +228,7 @@ header {
     font-weight: 600;
     border-radius: 8px;
     color: var(--custom-black);
+    color: #fff;
     background-color: var(--custom-orange);
 }
 
@@ -330,7 +385,8 @@ section {
 .resume-link,
 .service-link,
 .whatsapp-link,
-.project-link {
+.project-link,
+.contact-link {
     width: max-content;
     display: flex;
     align-items: center;
@@ -338,26 +394,36 @@ section {
     text-align: center;
     padding: 10px 15px;
     font-weight: 600;
-    color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 50px;
     transition: all 0.3s ease;
 }
 
-.resume-link:hover,
+.service-link,
+.project-link,
+.contact-link {
+    color: var(--cta-text-color);
+}
+
+.resume-link {
+    color: #fff;
+}
+
 .service-link:hover,
-.project-link:hover {
-    color: var(--custom-black);
-    background-color: var(--custom-orange);
+.project-link:hover,
+.resume-link:hover,
+.contact-link:hover {
+    color: #fff;
+    background-color: var(--custom-orange-hover);
 }
 
 .whatsapp-link {
-    color: var(--custom-black);
+    color: #fff;
     background-color: #05d150;
 }
 
 .whatsapp-link:hover {
-    color: var(--custom-black);
+    color: #fff;
     background-color: #00a73e;
 }
 
@@ -555,25 +621,14 @@ section {
 }
 
 .about-cta-wrapper .resume-link {
-    color: var(--custom-black);
+    color: #fff;
     background-color: var(--custom-orange);
     border-radius: 10px;
 }
 
 .about-cta-wrapper .resume-link:hover {
+    color: #fff;
     background-color: var(--custom-orange-hover);
-}
-
-.about-cta-wrapper .contact-link {
-    color: var(--text-color);
-    background-color: transparent;
-    border: 1px solid var(--border-color);
-    border-radius: 50px;
-}
-
-.about-cta-wrapper .contact-link:hover {
-    color: var(--custom-black);
-    background-color: var(--custom-orange);
 }
 
 #services,
@@ -592,13 +647,13 @@ section {
     width: max-content;
     padding: 12px 20px;
     border-radius: 10px;
-    color: var(--custom-black);
+    color: #fff;
     background-color: var(--custom-orange);
     transition: all 0.3s ease-in-out;
 }
 
 .service-cta-link:hover {
-    color: var(--custom-black);
+    color: #fff;
     background-color: var(--custom-orange-hover);
 }
 
@@ -682,7 +737,7 @@ section {
 
 .filter-btn,
 .project-filter-btn {
-    padding: 10px 22px;
+    padding: 10px 20px;
     border: none;
     border-radius: 50px;
     font-size: 0.92rem;
@@ -690,17 +745,22 @@ section {
     cursor: pointer;
     background: transparent;
     color: var(--text-color);
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.project-filter-btn:hover {
+    font-weight: 600;
+    background: var(--input-bg-color);
+    color: var(--custom-black);
 }
 
 .filter-btn.active,
-.filter-btn:hover,
-.project-filter-btn.active,
-.project-filter-btn:hover {
+.project-filter-btn.active {
     font-weight: 700;
     background: var(--input-bg-color);
     color: var(--custom-black);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
 }
 
 .skills-main-wrapper {
@@ -766,7 +826,7 @@ section {
 .certificate-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.234);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
 }
 
@@ -1006,36 +1066,42 @@ section {
     align-items: center;
     justify-content: center;
     padding: 8px;
+    border: 1px solid var(--border-color);
     border-radius: 50px;
-    background-color: white;
+    color: var(--body-bg-color);
+    background-color: var(--input-bg-color);
 }
 
 .links-wrapper a svg {
-    color: var(--custom-black);
+    color: var(--social-icon-color);
 }
 
 .links-wrapper a svg:hover {
-    color: var(--body-bg-color);
-    color: white;
+    color: #ffff;
 }
 
 .links-wrapper .gmail-link:hover {
+    color: #ffff;
     background-color: #f51919;
 }
 
 .links-wrapper .whatsapp-link:hover {
+    color: #ffff;
     background-color: #05d150;
 }
 
 .links-wrapper .linkedin-link:hover {
+    color: #ffff;
     background-color: rgb(0, 115, 255);
 }
 
 .links-wrapper .github-link:hover {
+    color: #ffff;
     background-color: rgb(255, 157, 0);
 }
 
 .links-wrapper .youtube-link:hover {
+    color: #ffff;
     background-color: #f51919;
 }
 
@@ -1091,7 +1157,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.2rem;
     padding: 0;
     border: none;
     border-radius: 5px;
@@ -1101,14 +1167,20 @@ form {
     color: var(--text-color);
 }
 
+.form-content fieldset label.required::after {
+    content: " *";
+    color: rgb(246, 23, 23);
+    font-weight: 600;
+}
+
 .form-content fieldset input {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
     color: var(--custom-black);
-    border: 1px solid rgba(255, 255, 255, 0.134);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
-    background-color: #fdfeff;
+    background-color: var(--input-bg-color);
 }
 
 .form-content fieldset select {
@@ -1116,6 +1188,8 @@ form {
     font-size: 1rem;
     border-radius: 5px;
     padding: 10px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--border-color);
 }
 
 .form-content fieldset textarea {
@@ -1126,7 +1200,8 @@ form {
     font-size: 1rem;
     color: var(--custom-black);
     border-radius: 5px;
-    background-color: #fdfeff;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--border-color);
 }
 
 .form-content fieldset input,
@@ -1139,32 +1214,35 @@ form {
     width: 100%;
     border: none;
     border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.125rem;
+    font-weight: 600;
     padding: 15px;
+    color: #fff;
     background-color: var(--custom-orange);
     cursor: pointer;
 }
 
 #submit-btn:hover {
-    background-color: #f79927;
+    background-color: var(--custom-orange-hover);
 }
 
 #form-status {
-    width: 90%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     text-align: center;
+    font-size: 1rem;
     color: var(--custom-black);
+    border: none;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .form-content .success {
-    background-color: #00a73e;
+    background-color: #15f065;
 }
 
 .form-content .error {
-    background-color: #ff4000;
+    background-color: #ff400082;
 }
 
 footer {
