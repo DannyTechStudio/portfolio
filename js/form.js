@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok && result.success) {
                 
                 formStatus.className = "success";
-                formStatus.textContent = "Message sent successfully! Daniel will get back to you soon.";
+                formStatus.textContent = "Message sent! Daniel will get back to you shortly.";
                 
                 setTimeout(() => {
 
