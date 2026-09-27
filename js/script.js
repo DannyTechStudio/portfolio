@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set initial state
     document.body.setAttribute('data-theme', theme);
     themeToggleBtn.innerHTML = theme === 'light' ? `${darkIcon}` : `${lightIcon}`;
+    themeToggleBtn.title = 'Switch to dark theme';
     
     themeToggleBtn.addEventListener('click', () => {
         
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('theme', theme);
         
         themeToggleBtn.innerHTML = theme === 'dark' ? `${lightIcon}` : `${darkIcon}`;
+        themeToggleBtn.title = 'Switch to light theme';
     });
 
 
