@@ -275,6 +275,7 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     width: 75%;
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul li {
