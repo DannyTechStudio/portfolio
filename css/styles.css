@@ -186,9 +186,10 @@ header {
 
 .logo-text {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    gap: 0;
     font-size: 1.5rem;
     font-weight: 900;
 }
@@ -242,6 +243,7 @@ header {
     border: none;
     color: var(--text-color);
     background-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 nav {
