@@ -29,7 +29,8 @@
     }
 
     .nav-links-wrapper {
-        width: 10%;
+        width: 25%;
+        justify-content: center;
     }
 
     .nav-links-wrapper ul.active {
@@ -56,7 +57,7 @@
 
     .hamburger-icon {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         cursor: pointer;
     }
 
