@@ -13,6 +13,7 @@
     --navbar-color: #060119;
     --nav-links-color: #8892a4;
     --nav-links-hover-color: #00D8F5;
+    --nav-drop-shadow-color: rgba(200, 185, 185, 0.11);
     --faded-border-color: #ffffff1c;
     --border-color: rgba(225, 225, 225, 0.234);
     --form-bg-color: rgba(225, 225, 225, 0.51);
@@ -44,6 +45,7 @@
     --navbar-color: #FFFFFF;
     --nav-links-color: #5F6675;
     --nav-links-hover-color: #00AFC7;
+    --nav-drop-shadow-color: rgba(12, 11, 11, 0.11);
     --faded-border-color: rgba(20, 25, 35, 0.08);
     --border-color: rgba(20, 25, 35, 0.16);
     --form-bg-color: rgba(255, 255, 255, 0.9);
@@ -264,7 +266,8 @@ nav {
     z-index: 1000;
     border-bottom: 1px solid var(--faded-border-color);
     background-color: var(--navbar-color);
-    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.077);
+    box-shadow: 2px 4px 8px var(--nav-drop-shadow-color);
+    box-shadow: 2px 4px 8px var(--nav-drop-shadow-color);
 }
 
 .nav-links-wrapper {
@@ -319,12 +322,13 @@ section {
     justify-content: space-between;
     width: 100%;
     min-height: 100vh;
-    padding: 80px 0;
+    padding: 120px 0 80px 0;
+    padding-top: 120px;
     margin-top: 2rem;
 }
 
 #home .hero-content {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -453,10 +457,10 @@ section {
 
 .section-title {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-color);
     width: max-content;
-    padding: 5px 15px;
+    padding: 3px 15px;
     border: 1px solid var(--border-color);
     border-radius: 50px;
     margin: 0.5rem 0;
