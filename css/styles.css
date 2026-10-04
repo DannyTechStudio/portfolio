@@ -267,7 +267,6 @@ nav {
     border-bottom: 1px solid var(--faded-border-color);
     background-color: var(--navbar-color);
     box-shadow: 2px 4px 8px var(--nav-drop-shadow-color);
-    box-shadow: 2px 4px 8px var(--nav-drop-shadow-color);
 }
 
 .nav-links-wrapper {
