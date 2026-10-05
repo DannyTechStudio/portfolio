@@ -1,5 +1,5 @@
 /*--------- Variables ---------*/
-:root {
+[data-theme='dark'] {
     --custom-black: #090909;
     --body-bg-color: #040112;
     --text-color: #c6c6c7;
@@ -25,6 +25,35 @@
     --modal-bg-color: rgba(0, 0, 0, 0.6);
     --project-details-container-bg-color: rgba(255, 252, 252, 0.952);
     --footer-bg-color: rgb(182, 6, 185);
+    --footer-link-color: rgb(0, 51, 115);
+}
+
+[data-theme='light'] {
+    --custom-black: #111111;
+    --body-bg-color: #F8F9FA;
+    --text-color: #252525;
+    --faded-text: #6B7280;
+    --blue-deep: rgb(30, 30, 120);
+    --custom-cyan: #009FB7;
+    --custom-cyan-hover: #00869A;
+    --custom-orange: #E67E00;
+    --custom-orange-hover: #CC7000;
+    --navbar-color: #FFFFFF;
+    --nav-links-color: #5F6B7A;
+    --nav-links-hover-color: #009FB7;
+    --faded-border-color: #00000012;
+    --border-color: rgba(0, 0, 0, 0.14);
+    --form-bg-color: rgba(255, 255, 255, 0.85);
+    --form-btn-bg-color: #3F6F88;
+    --input-bg-color: #EEF4FA;
+    --portfolio-link-color: rgb(0, 91, 190);
+    --soft-skill-article-bg-color: #E8B8F0;
+    --tech-skill-article-bg-color: #D8EA8A;
+    --tools-article-bg-color: #9DE8F2;
+    --h2-bg-color: rgba(0, 0, 0, 0.045);
+    --modal-bg-color: rgba(0, 0, 0, 0.45);
+    --project-details-container-bg-color: #FFFFFF;
+    --footer-bg-color: #E8A8E8;
     --footer-link-color: rgb(0, 51, 115);
 }
 
