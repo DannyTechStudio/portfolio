@@ -84,9 +84,6 @@ function renderProjectInfo() {
     architectureDesignImg.alt = currentProject.architectureDesignImgAltText;
 }
 
-renderProjectInfo();
-
-
 
 /*----------------------------------------------
             Project MetaData
@@ -127,9 +124,6 @@ function renderProjectMetaData() {
 }
 
 
-renderProjectMetaData();
-
-
 /*----------------------------------------------
     Project Links
 ----------------------------------------------*/
@@ -159,10 +153,6 @@ function renderProjectLinks() {
     }
 }
 
-renderProjectLinks();
-
-
-
 
 /*----------------------------------------------
     Technology Pills
@@ -181,8 +171,6 @@ function renderTechPills() {
 
     });
 }
-
-renderTechPills();
 
 
 /*----------------------------------------------
@@ -212,8 +200,6 @@ function renderProjectMetrics() {
         
     });
 }
-
-renderProjectMetrics();
 
 
 /*----------------------------------------------
@@ -245,8 +231,6 @@ function renderProjectFeature() {
     
 }
 
-renderProjectFeature();
-
 
 /*----------------------------------------------
         Stack - Programming Language
@@ -266,8 +250,6 @@ function renderProjectProgLangList() {
     });
     
 }
-
-renderProjectProgLangList();
 
 
 /*----------------------------------------------
@@ -289,8 +271,6 @@ function renderProjectStackFramework() {
 
 }
 
-renderProjectStackFramework();
-
 
 /*----------------------------------------------
         Stack Database 
@@ -310,8 +290,6 @@ function renderProjectStackDB() {
     });
 
 }
-
-renderProjectStackDB();
 
 
 /*----------------------------------------------
@@ -333,8 +311,6 @@ function renderProjectStackAuth() {
 
 }
 
-renderProjectStackAuth();
-
 
 /*----------------------------------------------
         Stack Auth 
@@ -354,8 +330,6 @@ function renderProjectStackTools() {
     });
     
 }
-
-renderProjectStackTools();
 
 
 /*----------------------------------------------
@@ -428,8 +402,6 @@ function renderProjectChalSol() {
     
 }
 
-renderProjectChalSol();
-
 
 /*----------------------------------------------
         Project Contributions 
@@ -451,8 +423,6 @@ function renderProjectContributions() {
 
 }
 
-renderProjectContributions();
-
 
 /*----------------------------------------------
         Project Contributions 
@@ -473,8 +443,6 @@ function renderProjectLessons() {
     });
 
 }
-
-renderProjectLessons();
 
 
 /*----------------------------------------------
@@ -508,8 +476,6 @@ function renderFutureImprovements() {
 
 }
 
-renderFutureImprovements();
-
 
 /*----------------------------------------------
         Project Year
@@ -519,9 +485,6 @@ function renderProjectYear() {
     projectYear.textContent = currentProject.year;
 
 }
-
-renderProjectYear();
-
 
 
 /*----------------------------------------------
@@ -594,4 +557,26 @@ function renderProjectNav() {
     });
 }
 
-renderProjectNav();
+
+/*----------------------------------------------
+        Functions Call On Page Load
+----------------------------------------------*/
+document.addEventListener('DOMContentLoaded', () => {
+    renderProjectInfo();
+    renderProjectMetaData();
+    renderProjectLinks();
+    renderTechPills();
+    renderProjectMetrics();
+    renderProjectFeature();
+    renderProjectProgLangList();
+    renderProjectStackFramework();
+    renderProjectStackDB();
+    renderProjectStackAuth();
+    renderProjectStackTools();
+    renderProjectChalSol();
+    renderProjectContributions();
+    renderProjectLessons();
+    renderFutureImprovements();
+    renderProjectYear();
+    renderProjectNav();
+});
