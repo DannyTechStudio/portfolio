@@ -132,7 +132,7 @@ const projectData = {
 
         architectureDescription: "RetailPrime follows a layered backend architecture where client applications communicate with Django REST Framework through HTTPS-based REST APIs. Authentication and permission checks protect secured resources before requests reach the appropriate business logic, which manages products, carts, inventory, orders, and payments. The application persists relational data in MySQL and integrates with Paystack for payment processing.",
 
-        architectureImage: "images/retailPrime_backend_architecture_design.png",
+        architectureImage: "../images/retailPrime_backend_architecture_design.png",
         
         architectureDesignImgAltText: "Retailprime architecture image",
 
@@ -407,7 +407,7 @@ const projectData = {
 
         architectureDescription: "PurseLens follows a 3-tier architectural pattern where the web frontend communicates with the Django REST Framework backend through secure RESTful APIs. Incoming requests to protected resources pass through authentication and permission controls before reaching the application's business logic. The backend handles transaction, category, budget, and analytics operations before interacting with MySQL for persistent data storage. JWT authentication is used for API authorization, while Django Allauth and OAuth provide social authentication capabilities such as Google login. The frontend consumes the backend APIs and presents financial information through the application's web interface.",
         
-        architectureImage: "./images/purselens_backend_architecture_design.png",
+        architectureImage: "../images/purselens_backend_architecture_design.png",
 
         architectureDesignImgAltText: "PurseLens architecture image",
 
