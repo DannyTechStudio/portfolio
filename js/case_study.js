@@ -1,22 +1,4 @@
 /*----------------------------------------------
-        Data Searching
-----------------------------------------------*/ 
-const urlparams = new URLSearchParams(window.location.search);
-
-const projectId = urlparams.get("project");
-
-const currentProject = projectData[projectId];
-
-if (currentProject) {
-    
-    console.log(
-        `Loading ${currentProject.title} case study page...`
-    );
-
-}
-
-
-/*----------------------------------------------
         Element References
 ----------------------------------------------*/ 
 const projectCategory = document.querySelector("#project-category");
@@ -57,6 +39,19 @@ const architectureDescription = document.querySelector("#architecture-descriptio
 const architectureDesignImg = document.querySelector("#architecture-image");
 
 const projectYear = document.querySelector("#year");
+
+
+// Data Searching
+const urlparams = new URLSearchParams(window.location.search);
+const projectId = urlparams.get("project");
+const currentProject = projectData[projectId];
+
+if (currentProject) {
+    console.log(
+        `Loading ${currentProject.title} case study page...`
+    );
+    
+}
 
 
 /*----------------------------------------------
@@ -559,9 +554,15 @@ function renderProjectNav() {
 
 
 /*----------------------------------------------
-        Functions Call On Page Load
+        On Page Load Functionalites
 ----------------------------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
+    // Theme Fetching
+    const theme = localStorage.getItem('theme') || 'light';
+    document.body.setAttribute('data-theme', theme);
+
+    
+    // Functions Call
     renderProjectInfo();
     renderProjectMetaData();
     renderProjectLinks();
