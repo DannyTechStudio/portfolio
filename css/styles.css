@@ -850,7 +850,7 @@ section {
 
 .project-status {
     width: max-content;
-    padding: 5px 12px;
+    padding: 5px 8px;
     font-size: 12px;
     font-weight: bold;
     border: 1px solid var(--border-color);
@@ -862,11 +862,11 @@ section {
     z-index: 2;
     top: 5px;
     left: 10px;
+    color: white;
 }
 
 .project-status.completed {
-    color: var(--custom-black);
-    background-color: rgb(4, 253, 4);
+    background-color: rgb(9, 187, 9);
 }
 
 .project-status.ongoing {
@@ -881,7 +881,7 @@ section {
     object-position: top;
     display: block;
     border-bottom: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     transition: transform 0.4s ease;
 }
 
@@ -911,10 +911,11 @@ section {
 }
 
 .stack-wrapper span {
-    padding: 3px 12px;
+    padding: 3px 8px;
     font-size: 12px;
     color: var(--custom-orange);
-    border: 1px solid var(--border-color);
+    background-color: rgba(248, 181, 57, 0.119);
+    border: 1px solid rgba(250, 173, 29, 0.353);
     border-radius: 50px;
 }
 
