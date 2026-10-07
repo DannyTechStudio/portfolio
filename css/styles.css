@@ -923,9 +923,46 @@ section {
     background-color: var(--h2-bg-color);
 }
 
+.project-card .project-description-wrapper {
+    width: 100%;
+}
+
 .project-descriptions {
     line-height: 1.5;
     color: var(--text-color);
+}
+
+/* Collapsed descriptions */
+.project-descriptions.collapsed {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--custom-cyan);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+    color: var(--custom-orange);
+}
+
+.read-more-btn:focus-visible {
+    outline: 2px solid var(--custom-cyan);
+    outline-offset: 4px;
+    border-radius: 2px;
 }
 
 .project-link-wrapper {
