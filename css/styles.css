@@ -748,7 +748,7 @@ section {
 
 .filter-btn,
 .project-filter-btn {
-    padding: 10px 20px;
+    padding: 5px 8px;
     border: none;
     border-radius: 50px;
     font-size: 0.92rem;
@@ -756,7 +756,7 @@ section {
     cursor: pointer;
     background: transparent;
     color: var(--text-color);
-    transition: all 0.3s ease;
+    transition: all 0.45s ease;
 }
 
 .filter-btn:hover,
@@ -887,7 +887,7 @@ section {
 
 .project-img-wrapper img:hover,
 .cert-img-wrapper img:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .project-details-wrapper {
@@ -928,16 +928,21 @@ section {
 }
 
 .project-descriptions {
+    margin: 0;
+    font-size: 1rem;
     line-height: 1.5;
     color: var(--text-color);
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
 }
 
 /* Collapsed descriptions */
 .project-descriptions.collapsed {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     overflow: hidden;
 }
 
@@ -956,7 +961,8 @@ section {
 
 .read-more-btn:hover {
     text-decoration: underline;
-    color: var(--custom-orange);
+    text-underline-offset: 3px;
+    color: var(--custom-cyan-hover);
 }
 
 .read-more-btn:focus-visible {
