@@ -15,6 +15,8 @@ const projectData = {
         
         longDescription: "RetailPrime is a scalable backend solution built for modern online retail businesses. It provides secure RESTful APIs for product management, customer accounts, shopping carts, orders, payments, inventory tracking, coupons, reviews, and order fulfillment.",
         
+        heroImage: "../images/retailprime_case-study_hero.png",
+
         status: "Completed",
         
         featured: true,
@@ -30,6 +32,8 @@ const projectData = {
         liveDemo: "",
         
         github: "https://github.com/DannyTechStudio/ecommerce_project.git",
+
+        apiReference: "",
 
         technologies: [
             "Python",
@@ -64,9 +68,14 @@ const projectData = {
             }
         ],
 
+        overviewHeading: "Engineering a Unified eCommerce Backend",
         overview: "RetailPrime demonstrates my ability to design and build production-ready backend systems for modern eCommerce applications. The project was developed with a strong focus on creating a modular and maintainable architecture capable of supporting essential online retail operations, including product management, inventory tracking, shopping carts, order processing, customer interactions, and payments. It emphasizes secure JWT-based authentication, clean RESTful API design, well-structured relational database models, and Paystack payment integration. Beyond implementing individual features, the project reflects my approach to solving real-world backend challenges by separating responsibilities, designing reusable components, and building a system that can be extended as business requirements evolve.",
 
+        problemTitle: "Fragmented Retail Operations",
+
         problem: "Small and medium-sized retailers need a centralized backend capable of managing products, inventory, customers, shopping carts, payments, coupons, reviews, and orders securely without relying on fragmented systems.",
+
+        solutionTitle: "A Unified, API-Driven E-commerce Backend",
 
         solution: "I designed a modular backend using Django REST Framework that exposes secure REST APIs for every stage of the customer journey, from browsing products to completing Paystack-powered payments and tracking orders.",
 
@@ -275,11 +284,13 @@ const projectData = {
 
         category: "● Full-Stack Project",
 
-        shortDescription: "A personal finance and budgeting API that helps users track transactions, manage budgets, organize expenses, and gain financial insights through analytics.",
+        shortDescription: "A personal finance and budgeting app that helps users track transactions, manage budgets, organize expenses, and gain financial insights through analytics.",
 
         longDescription: "PurseLens is a full-stack personal finance and budgeting application designed to help users take control of their financial activity. The platform provides secure authentication, social login, transaction management, category organization, budgeting, and financial analytics through a Django REST Framework backend and a responsive web frontend.",
 
-        status: "In Development",
+        heroImage: "../images/purselens_dashboard_ui.png",
+
+        status: "Project In Development",
 
         featured: true,
 
@@ -295,6 +306,8 @@ const projectData = {
 
         github: "https://github.com/DannyTechStudio/purselens_app.git",
 
+        apiReference: "",
+
         technologies: [
             "Python",
             "Django",
@@ -303,7 +316,7 @@ const projectData = {
             "CSS3",
             "JavaScript",
             "MySQL",
-            "JWT Authentication",
+            "JWT(HttpOnly)",
             "Google OAuth",
             "Django Allauth",
             "Postman",
@@ -313,7 +326,7 @@ const projectData = {
 
         metrics: [
             {
-                title: "Models",
+                title: "Core Models",
                 value: "3+"
             },
 
@@ -329,19 +342,24 @@ const projectData = {
 
             {
                 title: "Authentication",
-                value: "JWT + OAuth"
+                value: "JWT (HttpOnly)"
             }
         ],
 
+        overviewHeading: "Building Smarter Personal Finance Management",
         overview: "PurseLens is a full-stack personal finance application built to provide users with a structured and centralized way to manage their financial activity. The application combines a Django and Django REST Framework backend with a web-based frontend to provide functionality for transaction tracking, category management, budgeting, and financial analytics. The backend exposes secure RESTful APIs while the frontend consumes these services to provide an interactive user experience. Authentication is implemented using JWT for API security alongside social authentication capabilities such as Google login. The project focuses not only on CRUD functionality but also on implementing meaningful financial business logic, including budget tracking, spending calculations, remaining balances, and dashboard summaries. As an ongoing personal project, PurseLens reflects my ability to design and develop a complete application across both backend and frontend layers while continuously improving its architecture and functionality.",
 
+        problemTitle: "Data Fragmentation & Unified Visibility",
+        
         problem: "Managing personal finances across disconnected spreadsheets, notes, and financial applications can make it difficult to understand spending patterns, monitor budgets, and maintain an accurate picture of one's financial position. Users need a centralized platform where transactions, categories, budgets, and financial insights can be managed in one place.",
-
-        solution: "I designed and developed a full-stack financial management application with a Django REST Framework backend and web frontend. The system allows authenticated users to manage transactions, organize financial activity into categories, create budgets, and retrieve calculated financial insights through analytics and dashboard endpoints.",
+        
+        solutionTitle: "Centralized Ledger & Relational Analytics",
+            
+        solution: "I designed and developed a modular 3-tier financial management application with a Django REST Framework backend and web frontend. The system allows authenticated users to manage transactions, organize financial activity into categories, create budgets, and retrieve calculated financial insights through analytics and dashboard endpoints.",
         
         features: [
             {
-                title: "JWT Authentication",
+                title: "JWT (HttpOnly)",
                 description: "Secure authentication using JSON Web Tokens to protect user-specific financial resources."
             },
 
@@ -374,38 +392,42 @@ const projectData = {
         stack: {
 
             language: [
-                "Python",
-                "HTML5",
-                "CSS3",
-                "JavaScript",
+                "Python 3.11+",
+                "HTML5 Semantic",
+                "Responsive CSS3",
+                "JavaScript (ES6+)",
             ],
 
             framework: [
-                "Django",
-                "Django REST Framework"
+                "Django Framework",
+                "Django REST",
+                "Django CORS Headers",
             ],
 
             database: [
-                "MySQL"
+                "MySQL Server",
+                "Django ORM Migrations",
             ],
 
             authentication: [
-                "JWT",
-                "Google OAuth",
+                "SimpleJWT (HttpOnly Secured)",
+                "Google OAuth 2.0",
                 "Django Allauth",
+                "Token Refresh Rotation",
             ],
 
             tools: [
-                "Git",
-                "GitHub",
-                "Postman",
+                "Git & GitHub",
+                "Postman Collections",
                 "Draw.io",
-                "Figma",
+                "Figma Layout Spec",
             ]
 
         },
 
-        architectureDescription: "PurseLens follows a 3-tier architectural pattern where the web frontend communicates with the Django REST Framework backend through secure RESTful APIs. Incoming requests to protected resources pass through authentication and permission controls before reaching the application's business logic. The backend handles transaction, category, budget, and analytics operations before interacting with MySQL for persistent data storage. JWT authentication is used for API authorization, while Django Allauth and OAuth provide social authentication capabilities such as Google login. The frontend consumes the backend APIs and presents financial information through the application's web interface.",
+        architectureType: "3-Tier Implementation",
+
+        architectureDescription: "PurseLens follows a 3-tier architectural pattern where the web frontend communicates with the Django REST Framework backend through secure RESTful APIs. <br>Incoming requests to protected resources pass through authentication and permission controls before reaching the application's business logic. The backend handles transaction, category, budget, and analytics operations before interacting with MySQL for persistent data storage. JWT authentication is used for API authorization, while Django Allauth and OAuth provide social authentication capabilities such as Google login. The frontend consumes the backend APIs and presents financial information through the application's web interface.",
         
         architectureImage: "../images/purselens_backend_architecture_design.png",
 
@@ -502,21 +524,23 @@ const projectData = {
         screenshots: [],
 
         lessons: [
-            "Good database design is essential when building systems around interconnected financial data.",
+            "Designed the database schema and financial data relationships.",
 
-            "Business logic should be carefully separated from basic CRUD operations when an application requires meaningful calculations.",
-            
-            "Financial applications require consistent validation and calculation logic to maintain data accuracy.",
-            
-            "Designing APIs around clear resources makes backend systems easier for frontend applications to consume.",
-            
-            "Authentication and data ownership should be considered from the beginning when handling user-specific financial information.",
-            
-            "Integrating multiple authentication strategies requires careful consideration of user identity and authentication flows.",
-            
-            "Building a full-stack application provides a deeper understanding of how frontend and backend systems communicate and depend on one another.",
-            
-            "Real-world applications require more than CRUD operations; meaningful business rules and data processing are what make a system useful."
+            "Designed reliable schemas for interconnected financial data.",
+
+            "Separated business logic from basic CRUD operations.",
+
+            "Maintained financial accuracy through consistent validation and calculations.",
+
+            "Designed clear APIs for seamless frontend integration.",
+
+            "Prioritized authentication and data ownership for financial security.",
+
+            "Integrated multiple authentication strategies with consistent identity management.",
+
+            "Connected frontend and backend systems through full-stack development.",
+
+            "Implemented meaningful business rules beyond basic CRUD operations."
         ],
 
         futureImprovements: [
@@ -527,27 +551,27 @@ const projectData = {
             },
 
             {
+                title: "PostgreSQL Migration",
+
+                description: "Move the production database from MySQL to PostgreSQL to support a more deployment-oriented production environment."
+            },
+            
+            {
+                title: "Extended OAuth Providers",
+                
+                description: "Expand social authentication beyond Google by supporting additional providers such as Apple, Facebook, LinkedIn, and other configured OAuth providers."
+            },
+
+            {
                 title: "Recurring Transactions",
 
                 description: "Support recurring income and expenses such as salaries, subscriptions, rent, and utility payments."
             },
 
             {
-                title: "More Social Login Providers",
-
-                description: "Expand social authentication beyond Google by supporting additional providers such as Apple, Facebook, LinkedIn, and other configured OAuth providers."
-            },
-
-            {
                 title: "Notifications & Alerts",
 
                 description: "Notify users when they approach or exceed their budget limits or when important financial events occur."
-            },
-
-            {
-                title: "PostgreSQL Migration",
-
-                description: "Move the production database from MySQL to PostgreSQL to support a more deployment-oriented production environment."
             },
 
             {
