@@ -11,12 +11,10 @@ const projectData = {
         
         category: "● Backend Project",
         
-        shortDescription: "A single-vendor eCommerce backend that streamlines online retail through secure APIs, inventory management, Paystack payments, and order processing.",
+        shortDescription: "A single-vendor eCommerce backend built with Django REST Framework to streamline online retail operations through secure RESTful APIs, inventory management, and Paystack payment integration. It simplifies product management, shopping cart operations, and order processing while providing a reliable foundation for modern online stores.",
         
-        longDescription: "RetailPrime is a scalable backend solution built for modern online retail businesses. It provides secure RESTful APIs for product management, customer accounts, shopping carts, orders, payments, inventory tracking, coupons, reviews, and order fulfillment.",
+        longDescription: "It provides RESTful APIs for product management, customer accounts, shopping carts, orders, inventory tracking, Paystack payments, coupons, and product reviews. Designed with security, data integrity, and maintainability in mind, it supports reliable transaction processing and efficient order fulfillment. Its modular architecture enables seamless integration with frontend applications while providing a solid foundation for future growth.",
         
-        heroImage: "../images/retailprime_case-study_hero.png",
-
         status: "Completed",
         
         featured: true,
@@ -36,19 +34,19 @@ const projectData = {
         apiReference: "",
 
         technologies: [
-            "Python",
-            "Django",
-            "Django REST Framework",
+            "Python 3.11+",
+            "Django Framework",
+            "Django REST",
             "MySQL",
             "JWT Authentication",
-            "Postman",
+            "Postman Collections",
             "Git",
             "GitHub"
         ],
 
         metrics: [
             {
-                title: "Models",
+                title: "Core Models",
                 value: "12+"
             },
 
@@ -69,6 +67,7 @@ const projectData = {
         ],
 
         overviewHeading: "Engineering a Unified eCommerce Backend",
+        
         overview: "RetailPrime demonstrates my ability to design and build production-ready backend systems for modern eCommerce applications. The project was developed with a strong focus on creating a modular and maintainable architecture capable of supporting essential online retail operations, including product management, inventory tracking, shopping carts, order processing, customer interactions, and payments. It emphasizes secure JWT-based authentication, clean RESTful API design, well-structured relational database models, and Paystack payment integration. Beyond implementing individual features, the project reflects my approach to solving real-world backend challenges by separating responsibilities, designing reusable components, and building a system that can be extended as business requirements evolve.",
 
         problemTitle: "Fragmented Retail Operations",
@@ -114,30 +113,33 @@ const projectData = {
         stack: {
 
             language: [
-                "Python"
+                "Python 3.11+",
             ],
 
             framework: [
                 "Django",
-                "Django REST Framework"
+                "Django REST",
             ],
 
             database: [
-                "MySQL"
+                "MySQL",
+                "Django ORM Migrations",
             ],
 
             authentication: [
-                "JWT"
+                "SimpleJWT",
+                "Token Refresh Rotation",
             ],
 
             tools: [
-                "Git",
-                "GitHub",
-                "Postman",
-                "Draw.io"
+                "Git & GitHub",
+                "Postman Collections",
+                "Draw.io Schematics",
             ]
 
         },
+
+        architectureType: "3-Tier Implementation",
 
         architectureDescription: "RetailPrime follows a layered backend architecture where client applications communicate with Django REST Framework through HTTPS-based REST APIs. Authentication and permission checks protect secured resources before requests reach the appropriate business logic, which manages products, carts, inventory, orders, and payments. The application persists relational data in MySQL and integrates with Paystack for payment processing.",
 
@@ -245,31 +247,31 @@ const projectData = {
             {
                 title: "More Payment Service Integrations",
 
-                description: "Integrate more payment services like FlutterWave, Stripe etc."
+                description: "Integrate more payment services like FlutterWave, Stripe to expand payment options and accommodate customers with different payment preferences."
             },
 
             {
                 title: "Docker Support",
 
-                description: "Containerize the application for consistent deployment."
+                description: "Containerize the application using Docker to create a consistent, reproducible environment across development, testing, and production."
             },
 
             {
                 title: "Redis Caching",
 
-                description: "Improve response times for frequently requested data."
+                description: "Implement Redis caching for frequently accessed data, such as product listings, category information, and selected inventory details, to reduce repetitive database queries."
             },
 
             {
                 title: "CI/CD Pipeline",
 
-                description: "Automate testing and deployment workflows."
+                description: "Implement a Continuous Integration and Continuous Deployment (CI/CD) pipeline to automate code validation, testing, and deployment processes."
             },
 
             {
                 title: "Cloud Deployment",
 
-                description: "Deploy the application to a production cloud environment."
+                description: "Deploy RetailPrime to a production-ready cloud environment to make its APIs accessible to frontend applications and users over the internet."
             }
 
         ],
@@ -284,13 +286,11 @@ const projectData = {
 
         category: "● Full-Stack Project",
 
-        shortDescription: "A personal finance and budgeting app that helps users track transactions, manage budgets, organize expenses, and gain financial insights through analytics.",
+        shortDescription: "A personal finance and budgeting app that helps users track transactions, manage budgets, organize expenses and income into categories, and gain financial insights through analytics.",
 
         longDescription: "PurseLens is a full-stack personal finance and budgeting application designed to help users take control of their financial activity. The platform provides secure authentication, social login, transaction management, category organization, budgeting, and financial analytics through a Django REST Framework backend and a responsive web frontend.",
 
-        heroImage: "../images/purselens_dashboard_ui.png",
-
-        status: "Project In Development",
+        status: "In Progress",
 
         featured: true,
 
@@ -310,33 +310,33 @@ const projectData = {
 
         technologies: [
             "Python",
-            "Django",
-            "Django REST Framework",
+            "Django Framework",
+            "Django REST",
             "HTML5",
             "CSS3",
-            "JavaScript",
+            "JavaScript ES6+",
             "MySQL",
             "JWT(HttpOnly)",
             "Google OAuth",
             "Django Allauth",
-            "Postman",
+            "Postman Collections",
             "Git",
             "GitHub"
         ],
 
         metrics: [
             {
-                title: "Core Models",
+                title: "Models",
                 value: "3+"
             },
 
             {
-                title: "API Endpoints",
+                title: "Endpoints",
                 value: "25+"
             },
 
             {
-                title: "Core Features",
+                title: "Features",
                 value: "10+"
             },
 
@@ -347,6 +347,7 @@ const projectData = {
         ],
 
         overviewHeading: "Building Smarter Personal Finance Management",
+        
         overview: "PurseLens is a full-stack personal finance application built to provide users with a structured and centralized way to manage their financial activity. The application combines a Django and Django REST Framework backend with a web-based frontend to provide functionality for transaction tracking, category management, budgeting, and financial analytics. The backend exposes secure RESTful APIs while the frontend consumes these services to provide an interactive user experience. Authentication is implemented using JWT for API security alongside social authentication capabilities such as Google login. The project focuses not only on CRUD functionality but also on implementing meaningful financial business logic, including budget tracking, spending calculations, remaining balances, and dashboard summaries. As an ongoing personal project, PurseLens reflects my ability to design and develop a complete application across both backend and frontend layers while continuously improving its architecture and functionality.",
 
         problemTitle: "Data Fragmentation & Unified Visibility",
@@ -419,7 +420,7 @@ const projectData = {
             tools: [
                 "Git & GitHub",
                 "Postman Collections",
-                "Draw.io",
+                "Draw.io Schematics",
                 "Figma Layout Spec",
             ]
 
