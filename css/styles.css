@@ -9,7 +9,7 @@
     --custom-cyan: #00D8F5;
     --custom-cyan-hover: #02bfd8;
     --custom-orange: #FF8C00;
-    --custom-orange-hover: #e78002;
+    --custom-orange-hover: #fc9517;
     --navbar-color: #060119;
     --nav-links-color: #8892a4;
     --nav-links-hover-color: #00D8F5;
@@ -41,7 +41,7 @@
     --custom-cyan: #00AFC7;
     --custom-cyan-hover: #0095AA;
     --custom-orange: #F47B00;
-    --custom-orange-hover: #D96800;
+    --custom-orange-hover: #fc9517;
     --navbar-color: #FFFFFF;
     --nav-links-color: #5F6675;
     --nav-links-hover-color: #00AFC7;
@@ -241,7 +241,7 @@ header {
 }
 
 .nav-contact-link:hover {
-    color: var(--custom-black);
+    color: #fff;
     background-color: var(--custom-orange-hover);
 }
 
