@@ -11,6 +11,7 @@
 
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="../css/case_study.css">
+    <link rel="stylesheet" href="../css/case_study_breakpoints.css">
     <link rel="shortcut icon" href="../images/dannytechstudio_favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -20,109 +21,149 @@
     <header>
     
         <nav>
-            <a class="home-link">
-                <div class="header-wrapper">
-                    <img src="../images/dannytechstudio_favicon.png" alt="DannyTechStudio logo">
+            <a href="../index.html#home" class="home-link">PurseLens</a>
 
-                    <h1 class="logo-text">
-                        <span class="title-part-one">DannyTech</span>
-                        <span class="title-part-two">Studio</span>
-                    </h1>
-                </div>
-            </a>
+            <ul class="nav-links-list">
+                <li><a href="#home">Overview</a></li>
+                <li><a href="#problem-solution">The Solution</a></li>
+                <li><a href="#features-section">Features</a></li>
+                <li><a href="#architecture-section">Architecture</a></li>
+                <li><a href="#technical-highlights">Tech Stack</a></li>
+                <li><a href="#future-section">Roadmap</a></li>
+            </ul>
+    
+            <div class="nav-cta-wrapper">
 
-            <!-- <ul id="nav-links-list"></ul> -->
-    
-            <div class="nav-actions">
-                <a id="github-link" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                    </svg>
-                    GitHub
-                </a>
-    
-                <a id="demo-link" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
-                    </svg>
-                    Live Demo
-                </a>
-    
-                <a href="../index.html#projects">
-                    Back to Portfolio
+                <a href="../index.html#projects" class="nav-cta" title="Back to Portfolio">
+                    <sapn class="link-text">Back to Portfolio</sapn>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
                         viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                     </svg>
                 </a>
+                
+                <button class="hamburger-icon" aria-label="Toggle navigation">&#9776;</button>
             </div>
-    
         </nav>
-    
+
     </header>
     
     <main>
     
-        <section id="hero" class="hero-section">
-            
+        <section id="home" class="hero-section">
+        
             <div class="hero-content-wrapper">
-                
+        
                 <span id="project-category"></span>
-                
+        
                 <h1 id="project-title"></h1>
-                
+        
                 <p id="short-description" class="project-description"></p>
-                
+        
                 <p id="long-description" class="project-description"></p>
-                
+        
                 <div id="technology-pills" class="tech-pills-wrapper"></div>
+        
+                <div class="project-cta-btn-wrapper">
+                    <a href=""  id="live-preview-link" class="cta-btn">
+                        Live Preview
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                    </a>
+        
+                    <a href="" id="github-repo-link" class="cta-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                        GitHub
+                    </a>
+        
+                    <a href="" id="api-ref-link" class="cta-btn">
+                        API Reference
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-up-right preview-icon">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
+                    </a>
+                </div>
+        
+            </div>
+            
+            <div class="project-metrics-wrapper reveal d1">
                 
                 <div id="project-meta" class="project-meta-wrapper"></div>
                 
                 <div id="metrics-grid" class="metrics-wrapper"></div>
-                
             </div>
-    
+            
         </section>
+
+        <section id="problem-solution" class="problem-solution-wrapper">
     
-    
-        <section id="problem-solution">
-    
-            <article class="problem-card">
-    
-                <h2>The Problem</h2>
-    
+            <div class="problem-card reveal d1">
+                
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f31414" class="bi bi-exclamation-triangle"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                    </svg>
+                    The Architectural Problem
+                </span>
+                
+                <h2 id="problem-title"></h2>
+                
                 <p id="problem"></p>
     
-            </article>
+            </div>
     
-            <article class="solution-card">
-    
-                <h2>My Solution</h2>
+            <div class="solution-card reveal d2">
+                
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00fb00" class="bi bi-gear-wide-connected"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5m0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78zM5.048 3.967l-.087.065zm-.431.355A4.98 4.98 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8zm.344 7.646.087.065z" />
+                    </svg>
+                    The Engineered Solution
+                </span>
+
+                <h2 id="solution-title"></h2>
     
                 <p id="solution"></p>
     
-            </article>
+            </div>
     
         </section>
     
     
         <section id="overview-section" class="project-overview-section">
-    
-            <h2>Project Overview</h2>
-    
-            <p id="overview"></p>
-    
+            
+            <div class="overview-wrapper">
+                <span class="section-badge">Project Overview</span>
+                
+                <h2 id="overview-heading"></h2>
+                
+                <p id="overview"></p>
+            </div>
+            
         </section>
-    
-    
+        
+        
         <section id="features-section">
+            <span class="section-badge">System Capabilities</span>
     
-            <h2>Core Features</h2>
+            <h2>Core Features & Modules</h2>
     
             <div id="features-grid" class="features-grid"></div>
     
@@ -131,29 +172,31 @@
     
         <section id="architecture-section" class="architecture-section">
     
-            <h2>System Architecture</h2>
-            
-            <div class="architecture-content-wrapper">
+            <div class="architecture-content-wrapper reveal d1">
+                <span class="section-badge" id="architecture-type"></span>
+
+                <h2>System Architecture & Data Pipeline</h2>
 
                 <p id="architecture-description"></p>
-                
-                <img id="architecture-image" src="" alt="" fetchpriority="high">
-
             </div>
+            
+            <img id="architecture-image" src="" alt="" fetchpriority="high" class="reveal d2">
     
         </section>
     
     
         <section id="technical-highlights" class="tech-stack-section">
-    
-            <h2>Technical Highlights</h2>
+            
+            <span class="section-badge">Technology Stack</span>
+
+            <h2>Technical Highlights & Tooling</h2>
     
             <div id="stack-grid" class="tech-grid">
     
-                <article class="stack-card">
+                <div class="stack-card reveal d1">
     
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml">
                             <path d="m18 16 4-4-4-4" />
                             <path d="m6 8-4 4 4 4" />
@@ -164,12 +207,12 @@
     
                     <ul id="language-list"></ul>
     
-                </article>
+                </div>
     
-                <article class="stack-card">
+                <div class="stack-card reveal d2">
     
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks-icon lucide-blocks">
                             <path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2" />
                             <rect x="14" y="2" width="8" height="8" rx="1" />
@@ -179,12 +222,12 @@
     
                     <ul id="framework-list"></ul>
     
-                </article>
+                </div>
     
-                <article class="stack-card">
+                <div class="stack-card reveal d3">
     
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-icon lucide-database">
                             <ellipse cx="12" cy="5" rx="9" ry="3" />
                             <path d="M3 5V19A9 3 0 0 0 21 19V5" />
@@ -195,12 +238,12 @@
     
                     <ul id="database-list"></ul>
     
-                </article>
+                </div>
     
-                <article class="stack-card">
+                <div class="stack-card reveal d4">
     
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield">
                             <path
                                 d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
@@ -210,12 +253,12 @@
     
                     <ul id="authentication-list"></ul>
     
-                </article>
+                </div>
     
-                <article class="stack-card">
+                <div class="stack-card reveal d5">
     
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-wrench"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-wrench"
                             viewBox="0 0 16 16">
                             <path
                                 d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11z" />
@@ -225,14 +268,14 @@
     
                     <ul id="tools-list"></ul>
     
-                </article>
+                </div>
     
             </div>
     
         </section>
     
     
-        <section id="challenges-section">
+        <section id="challenges-section" class="challenges-section">
     
             <h2>Challenges & Solutions</h2>
     
@@ -241,21 +284,21 @@
         </section>
     
     
-        <section id="contributions-lessons-section">
+        <section id="contributions-lessons-section" class="contributions-lessons-wrapper">
 
-            <div class="contributions-wrapper">
+            <div class="contributions-wrapper reveal d1">
 
                 <h2>What I Built</h2>
                 
-                <ul id="contributions-list"></ul>
+                <ul id="contributions-list" class="contributions-list"></ul>
                 
             </div>
             
-            <div class="contributions-wrapper">
+            <div class="lessons-wrapper reveal d2">
 
                 <h2>Lessons Learned</h2>
 
-                <ul id="lessons-list"></ul>
+                <ul id="lessons-list" class="lessons-list"></ul>
                 
             </div>
     
@@ -301,24 +344,30 @@
     
     
     <footer>
+        <div class="footer-content-wrapper">
+            
+            <div class="footer-main-content">
+                <div class="footer-project-details">
+                    <a href="../index.html#projects" class="home-link" id="title-link"></a>
+                    <p id="project-small-desc"></p>
+                </div>
 
-        <a class="home-link">
-            <div class="header-wrapper">
-                <img src="../images/dannytechstudio_favicon.png" alt="DannyTechStudio logo">
-        
-                <h1 class="logo-text">
-                    <span class="title-part-one">DannyTech</span>
-                    <span class="title-part-two">Studio</span>
-                </h1>
+                <ul class="nav-links-list">
+                    <p>Navigations</p>
+                    <li><a href="#home">Overview</a></li>
+                    <li><a href="#problem-solution">The Solution</a></li>
+                    <li><a href="#features-section">Features</a></li>
+                    <li><a href="#architecture-section">Architecture</a></li>
+                    <li><a href="#technical-highlights">Tech Stack</a></li>
+                    <li><a href="#future-section">Roadmap</a></li>
+                </ul>
             </div>
-        </a>
-    
-        <p>
-    
-            © <span id="year"></span> DannyTechStudio.
-            All Rights Reserved.
-    
-        </p>
+
+            <p>
+                © <span id="year"></span> DannyTechStudio.
+                All Rights Reserved.
+            </p>
+        </div>
     
     </footer>
     
