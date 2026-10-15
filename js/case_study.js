@@ -1,23 +1,30 @@
 /*----------------------------------------------
         Element References
 ----------------------------------------------*/ 
-const projectCategory = document.querySelector("#project-category");
-const projectTitle = document.querySelector("#project-title");
-const shortDescription = document.querySelector("#short-description");
-const longDescription = document.querySelector("#long-description");
+const projectCategory = document.getElementById("project-category");
+const projectTitle = document.getElementById("project-title");
+const shortDescription = document.getElementById("short-description");
+const longDescription = document.getElementById("long-description");
+
+const livePrevLink = document.getElementById("live-preview-link");
+const githubRepoLink = document.getElementById("github-repo-link");
+const apiRefLink = document.getElementById("api-ref-link");
+
+const caseStudyHeroImg = document.getElementById("case-study-hero-img");
 
 const projectMeta = document.querySelector("#project-meta");
 const techPills = document.querySelector("#technology-pills");
 
-const githubLink = document.querySelector("#github-link");
-const demoLink = document.querySelector("#demo-link");
-
 const metricsGrid = document.querySelector("#metrics-grid");
 
+const problemTitle = document.getElementById("problem-title");
 const problem = document.querySelector("#problem");
+
+const solutionTitle = document.getElementById("solution-title");
 const solution = document.querySelector("#solution");
 
-const overview = document.querySelector("#overview");
+const overviewHeading = document.getElementById("overview-heading")
+const projectOverview = document.getElementById("overview");
 
 const featureGrid = document.querySelector("#features-grid");
 
@@ -35,8 +42,12 @@ const lessonsList = document.querySelector("#lessons-list");
 
 const futureGrid = document.querySelector("#future-grid");
 
+const architectureType = document.getElementById("architecture-type");
 const architectureDescription = document.querySelector("#architecture-description");
 const architectureDesignImg = document.querySelector("#architecture-image");
+
+const footerTitleLink = document.getElementById("title-link");
+const footerProjectDescription = document.getElementById("project-small-desc");
 
 const projectYear = document.querySelector("#year");
 
@@ -66,13 +77,21 @@ function renderProjectInfo() {
     
     longDescription.textContent = currentProject.longDescription;
     
+    problemTitle.textContent = currentProject.problemTitle;
+    
     problem.textContent = currentProject.problem;
+
+    solutionTitle.textContent = currentProject.solutionTitle;
     
     solution.textContent = currentProject.solution;
     
-    overview.textContent = currentProject.overview;
+    overviewHeading.textContent = currentProject.overviewHeading;
     
-    architectureDescription.textContent = currentProject.architectureDescription;
+    projectOverview.textContent = currentProject.overview;
+
+    architectureType.textContent = currentProject.architectureType;
+    
+    architectureDescription.innerHTML = currentProject.architectureDescription;
     
     architectureDesignImg.src = currentProject.architectureImage;
     
@@ -86,11 +105,11 @@ function renderProjectInfo() {
 function renderProjectMetaData() {
     const metaData = [
         {
-            label: "Status",
+            label: "Project Status",
             value: currentProject.status
         },
         {
-            label: "Role",
+            label: "Primary Role",
             value: currentProject.role
         },
         {
@@ -113,7 +132,7 @@ function renderProjectMetaData() {
         <span class="meta-label">${item.label}</span>
         <span class="meta-value">${item.value}</span>
         `;
-        
+
         projectMeta.appendChild(metaCard);
     });
 }
@@ -125,26 +144,59 @@ function renderProjectMetaData() {
 function renderProjectLinks() {
     if (currentProject.github) {
 
-        githubLink.href = currentProject.github;
-        githubLink.target = "_blank";
-        githubLink.rel = "noopener noreferrer";
+        githubRepoLink.href = currentProject.github;
+        githubRepoLink.target = "_blank";
+        githubRepoLink.rel = "noopener noreferrer";
 
     } else {
 
-        githubLink.style.display = "none";
+        githubRepoLink.setAttribute("aria-disabled", "true");
+        githubRepoLink.classList.add('disabled-cta');
 
     }
     
     if (currentProject.liveDemo) {
 
-        demoLink.href = currentProject.liveDemo;
-        demoLink.target = "_blank";
-        demoLink.rel = "noopener noreferrer";
+        livePrevLink.href = currentProject.liveDemo;
+        livePrevLink.target = "_blank";
+        livePrevLink.rel = "noopener noreferrer";
 
     } else {
 
-        demoLink.style.display = "none";
+        livePrevLink.setAttribute("aria-disabled", "true");
+        livePrevLink.classList.add("disabled-cta");
+        livePrevLink.style.display = "none";
 
+    }
+
+    if (currentProject.apiReference) {
+
+        apiRefLink.href = currentProject.apiReference;
+        apiRefLink.target = "_blank";
+        apiRefLink.rel = "noopener noreferrer";
+
+    } else {
+
+        
+        apiRefLink.setAttribute("aria-disabled", "true");
+        apiRefLink.classList.add("disabled-cta");
+        apiRefLink.style.display = "none";
+
+    }
+
+    // Styles Manipulation on link availability
+    if (livePrevLink && githubRepoLink && apiRefLink) {
+        
+        livePrevLink.classList.add("main");
+
+        githubRepoLink.classList.add("minor");
+        apiRefLink.classList.add("minor");
+    }
+    
+    if (!livePrevLink && githubRepoLink || apiRefLink) {
+        
+        githubRepoLink.classList.add("main");
+        apiRefLink.classList.add("minor");
     }
 }
 
@@ -180,16 +232,15 @@ function renderProjectMetrics() {
         const metricCard = document.createElement("div");
         metricCard.classList.add("metric-card");
 
-        const metricCardTitle = document.createElement("h3");
+        const metricCardTitle = document.createElement("p");
         metricCardTitle.classList.add("metric-title");
-        metricCardTitle.textContent = metric.value;
+        metricCardTitle.textContent = metric.title;
         
-        const metricCardDescription = document.createElement("p");
+        const metricCardDescription = document.createElement("h3");
         metricCardDescription.classList.add("metric-card-descritpion");
-        metricCardDescription.textContent = metric.title;
+        metricCardDescription.textContent = metric.value;
         
-        metricCard.appendChild(metricCardTitle);
-        metricCard.appendChild(metricCardDescription);
+        metricCard.append(metricCardTitle, metricCardDescription);
         
         metricsGrid.appendChild(metricCard);
         
@@ -344,7 +395,7 @@ function renderProjectChalSol() {
         
         const challengeTitle = document.createElement("h3");
         challengeTitle.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
                 <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                 <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
             </svg>
@@ -354,6 +405,7 @@ function renderProjectChalSol() {
         
         
         const challengeDetails = document.createElement("p");
+        challengeDetails.classList.add("chal-details");
         challengeDetails.textContent = challenge.challenge;
         
         challengeCard.append(
@@ -367,8 +419,8 @@ function renderProjectChalSol() {
         const solutionTitle = document.createElement("h3");
         solutionTitle.innerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
+                width="14"
+                height="14"
                 fill="currentColor"
                 class="bi bi-check-circle-fill"
                 viewBox="0 0 16 16"
@@ -380,6 +432,7 @@ function renderProjectChalSol() {
 
         const solutionDetails = document.createElement("p");
         solutionDetails.textContent = challenge.solution;
+        solutionDetails.classList.add("solu-details");
         
         solutionCard.append(
             solutionTitle,
@@ -475,10 +528,10 @@ function renderFutureImprovements() {
 /*----------------------------------------------
         Project Year
 ----------------------------------------------*/
-function renderProjectYear() {
-    
+function renderProjectFooterDetails() {
+    footerTitleLink.textContent = currentProject.title;
+    footerProjectDescription.textContent = currentProject.shortDescription;
     projectYear.textContent = currentProject.year;
-
 }
 
 
@@ -557,12 +610,70 @@ function renderProjectNav() {
         On Page Load Functionalites
 ----------------------------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Fetching
+    /*-----------------------------------------------
+            Theme Fetching
+    -----------------------------------------------*/ 
     const theme = localStorage.getItem('theme') || 'light';
     document.body.setAttribute('data-theme', theme);
 
+
+    /*-----------------------------------------------
+            Stroll Reveal
+    -----------------------------------------------*/ 
+    const revealElements = document.querySelectorAll(".reveal");
+    const revealObjects = new IntersectionObserver((entries) => {
+
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("in"); });
+
+    }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+    revealElements.forEach(el => revealObjects.observe(el));
+
+
+    /*-----------------------------------------------
+            Active Tab Functionality
+    -----------------------------------------------*/ 
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("nav ul li a");
     
-    // Functions Call
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => link.classList.remove("active"));
+                
+                const id = entry.target.getAttribute("id");
+                const activeLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+                if (activeLink) activeLink.classList.add("active");
+            }
+        });
+    }, {
+        threshold: 0.4
+    });
+    
+    sections.forEach(section => observer.observe(section));
+
+
+    /*-----------------------------------------------
+            Hamburger Fucntionality
+    -----------------------------------------------*/
+    const hamburger = document.querySelector('.hamburger-icon');
+    const nav = document.querySelector("nav ul");
+    
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle('active');
+        hamburger.innerHTML = nav.classList.contains('active') ? '✕' : '&#9776;';
+    });
+    
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            hamburger.innerHTML = '&#9776;';
+        });
+    });
+
+    
+    /*-----------------------------------------------
+            Functions Call
+    -----------------------------------------------*/ 
     renderProjectInfo();
     renderProjectMetaData();
     renderProjectLinks();
@@ -578,6 +689,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProjectContributions();
     renderProjectLessons();
     renderFutureImprovements();
-    renderProjectYear();
+    renderProjectFooterDetails();
     renderProjectNav();
 });
