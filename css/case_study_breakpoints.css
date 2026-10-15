@@ -1,0 +1,233 @@
+/*----------------------------
+    Mobile View
+-----------------------------*/
+@media (max-width: 480px) {
+    p,
+    a {
+        font-size: 1rem;
+    }
+
+    body,
+    header,
+    main,
+    footer {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    #future-section,
+    .contributions-lessons-wrapper,
+    .challenge-grid,
+    .challenges-section,
+    .hero-content-wrapper,
+    .problem-solution-wrapper,
+    .overview-wrapper,
+    #features-section,
+    .architecture-content-wrapper,
+    .tech-stack-section {
+        padding: 0 5px;
+    }
+
+    .overview-wrapper p {
+        padding: 10px;
+    }
+
+    .chal-solu-wrapper {
+        box-shadow: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        position: fixed;
+        padding: 20px;
+    }
+
+    .nav-links-list {
+        width: 25%;
+        justify-content: center;
+    }
+
+    .nav-links-list.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #000004;
+    }
+
+    .nav-links-list li {
+        padding: 10px;
+    }
+
+    .nav-links-list {
+        display: none;
+    }
+
+    .nav-cta {
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .nav-cta .link-text {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    section,
+    .hero-content-wrapper,
+    .tech-pills-wrapper,
+    .project-meta-wrapper,
+    .metrics-wrapper,
+    .problem-solution-wrapper,
+    .overview-wrapper,
+    .overview-wrapper p,
+    .architecture-section,
+    .architecture-content-wrapper,
+    #architecture-image,
+    .challenge-card,
+    .sol-card,
+    .contributions-lessons-wrapper,
+    .contributions-wrapper,
+    .lessons-wrapper,
+    .contributions-list,
+    .lessons-list,
+    .project-nav,
+    .project-nav button,
+    .project-nav a,
+    .footer-content-wrapper,
+    .footer-project-details,
+    .footer-project-details p {
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 120px 0;
+        width: 100%;
+    }
+
+    .hero-content-wrapper .project-description,
+    .feature-card p,
+    .architecture-description {
+        font-size: 1rem;
+    }
+
+    .problem-solution-wrapper,
+    .architecture-section {
+        flex-direction: column;
+    }
+
+    .problem-solution-wrapper {
+        gap: 1rem;
+    }
+
+    .problem-card,
+    .solution-card {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .project-metrics-wrapper,
+    .contributions-lessons-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contributions-list li,
+    .lessons-list li {
+        width: 100%;
+    }
+
+    .improvement-card {
+        padding: 10px;
+        gap: 0.5rem;
+    }
+
+    .project-metrics-wrapper {
+        gap: 0;
+    }
+
+    .project-meta-wrapper,
+    .metrics-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .project-nav {
+        height: max-content;
+        padding: 2rem 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-content-wrapper {
+        padding: 2rem 5px;
+        gap: 2rem;
+    }
+
+    .footer-main-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-main-content .nav-links-list {
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
+    
+    .footer-main-content .nav-links-list li,
+    .footer-main-content .nav-links-list li a {
+        align-items: flex-start;
+        padding: 0;
+    }
+}
+
+
+/*----------------------------
+    Large Phones & Small Tablets
+-----------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+    p, 
+    a {
+        font-size: 1.125rem;
+    }
+    
+    body,
+    header,
+    main,
+    footer {
+        width: 100%;
+        align-items: stretch;
+    }
+}
+
+
+/*----------------------------
+    Tablets & Small Laptops
+-----------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    p,
+    a {
+        font-size: 1.125rem;
+    }
+
+    body,
+    header,
+    main,
+    footer {
+        width: 100%;
+        align-items: stretch;
+    }
+}
