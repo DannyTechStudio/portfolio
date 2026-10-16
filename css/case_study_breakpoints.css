@@ -32,7 +32,12 @@
         padding: 10px;
     }
 
+    .challenges-section h2 {
+        padding-left: 5px;
+    }
+
     .chal-solu-wrapper {
+        width: 96%;
         box-shadow: none;
     }
 
@@ -94,6 +99,7 @@
     .architecture-section,
     .architecture-content-wrapper,
     #architecture-image,
+    .challenges-section,
     .challenge-card,
     .sol-card,
     .contributions-lessons-wrapper,
