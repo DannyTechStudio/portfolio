@@ -230,15 +230,14 @@
     .architecture-content-wrapper,
     .tech-stack-section {
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 10px;
     }
 
     /* Navigation */
     nav {
         position: fixed;
         justify-content: space-between;
-        padding: 15px 20px;
+        padding: 15px 4rem;
     }
 
     .nav-links-list {
@@ -325,34 +324,43 @@
     #features-section {
         width: 100%;
     }
-
+    
     .feature-card {
         width: 100%;
     }
-
+    
     /* Architecture */
     .architecture-section {
         flex-direction: column;
         gap: 1.5rem;
     }
-
+    
     .architecture-content-wrapper {
         width: 100%;
     }
-
+    
     #architecture-image {
         width: 100%;
-        max-width: 100%;
+        max-width: 98%;
         height: auto;
     }
 
+    .tech-stack-section {
+        width: 100%;
+    }
+    
     /* Challenges */
+    .challenges-section h2 {
+        padding-left: 15px;
+    }
+    
     .challenge-grid {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem;
     }
-
+    
     .challenge-card,
     .sol-card {
         width: 100%;
@@ -361,7 +369,7 @@
     .chal-solu-wrapper {
         box-shadow: none;
     }
-
+    
     /* Project details and metrics */
     .project-meta-wrapper,
     .metrics-wrapper {
@@ -377,6 +385,7 @@
 
     /* Contributions and lessons */
     .contributions-lessons-wrapper {
+        width: 100%;
         display: flex;
         gap: 0.5rem;
     }
@@ -394,6 +403,10 @@
     .contributions-list li,
     .lessons-list li {
         width: 100%;
+    }
+
+    .improvement-grid {
+        width: 90%;
     }
 
     /* Future improvements */
@@ -425,7 +438,7 @@
 
     .footer-main-content {
         flex-wrap: wrap;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .footer-main-content .nav-links-list {
@@ -434,6 +447,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: space-between;
         padding: 0;
         position: static;
         background-color: transparent;
