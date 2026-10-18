@@ -476,9 +476,242 @@
 
     body,
     header,
+    section,
     main,
     footer {
         width: 100%;
         align-items: stretch;
     }
+
+    #future-section,
+    .contributions-lessons-wrapper,
+    .challenge-grid,
+    .challenges-section,
+    .hero-content-wrapper,
+    .problem-solution-wrapper,
+    .overview-wrapper,
+    #features-section,
+    .architecture-content-wrapper,
+    .tech-stack-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* Navigation */
+    nav {
+        position: fixed;
+        justify-content: space-between;
+        padding: 15px 25px;
+    }
+    
+    .nav-links-list {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-links-list li {
+        padding: 8px;
+    }
+
+    .nav-cta {
+        padding: 8px 14px;
+        border-radius: 5px;
+    }
+
+    .nav-cta .link-text {
+        display: inline;
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-section {
+        width: 100%;
+        padding: 150px 0 100px;
+    }
+
+    .hero-content-wrapper {
+        width: 100%;
+        /* max-width: 900px; */
+        margin: 0 auto;
+    }
+
+    .hero-content-wrapper .project-description,
+    .tech-pills-wrapper {
+        width: 100%;
+    }
+
+    .hero-content-wrapper .project-description,
+    .feature-card p,
+    .architecture-description {
+        font-size: 1.125rem;
+    }
+
+    /* Overview */
+    .overview-wrapper {
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Problem and Solution */
+    .problem-solution-wrapper {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .problem-card,
+    .solution-card {
+        flex: 1 1 300px;
+        min-width: 0;
+        padding: 20px;
+    }
+
+    /* Features */
+    #features-section {
+        width: 100%;
+    }
+
+    /* Architecture */
+    .architecture-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .architecture-content-wrapper {
+        width: 100%;
+    }
+
+    #architecture-image {
+        display: block;
+        width: 98%;
+        height: 480px;
+        margin: 0 auto;
+    }
+
+    /* Challenges */
+    .challenges-section h2 {
+        padding-left: 20px;
+    }
+    
+    .challenge-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .challenge-card,
+    .sol-card {
+        width: 100%;
+    }
+
+    /* Project details and metrics */
+    .project-meta-wrapper,
+    .metrics-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .project-metrics-wrapper {
+        gap: 1.5rem;
+    }
+
+    /* Contributions and lessons */
+    .contributions-lessons-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .contributions-wrapper,
+    .lessons-wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contributions-list,
+    .lessons-list {
+        width: 100%;
+    }
+
+    .contributions-list li,
+    .lessons-list li {
+        width: 100%;
+    }
+
+    /* Future improvements */
+    .improvement-card {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    /* Project navigation */
+    .project-nav {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .project-nav button,
+    .project-nav a {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    .footer-content-wrapper {
+        width: 100%;
+        padding: 3rem 25px;
+        gap: 2.5rem;
+    }
+
+    .footer-main-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .footer-main-content .nav-links-list {
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        position: static;
+        background-color: transparent;
+    }
+
+    .footer-main-content .nav-links-list li,
+    .footer-main-content .nav-links-list li a {
+        padding: 0;
+    }
+
+    .footer-project-details,
+    .footer-project-details p {
+        width: 100%;
+    }
 }
+
