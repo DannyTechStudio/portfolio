@@ -1267,6 +1267,10 @@ form {
 
 #submit-btn {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
     border: none;
     border-radius: 10px;
     font-size: 1.125rem;
@@ -1275,6 +1279,7 @@ form {
     color: #fff;
     background-color: var(--custom-orange);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 #submit-btn:hover {
