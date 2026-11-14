@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (match) {
                     card.style.display = 'block';
-                    setTimeout(() => card.classList.remove('hidden'), 10);
+                    setTimeout(() => card.classList.remove('hidden'), 100);
                 } else {
                     card.classList.add('hidden');
                     setTimeout(() => {
                         if (card.classList.contains('hidden')) {
                             card.style.display = 'none';
                         }
-                    }, 300);
+                    }, 100);
                 }
             });
         });
@@ -52,14 +52,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (match) {
                     card.style.display = 'block';
-                    setTimeout(() => card.classList.remove('hidden'), 10);
+                    setTimeout(() => card.classList.remove('hidden'), 100);
                 } else {
                     card.classList.add('hidden');
                     setTimeout(() => {
                         if (card.classList.contains('hidden')) {
                             card.style.display = 'none';
                         }
-                    }, 300);
+                    }, 100);
                 }
             });
         });
