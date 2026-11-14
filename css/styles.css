@@ -760,18 +760,11 @@ section {
 }
 
 .filter-btn:hover,
-.project-filter-btn:hover {
-    font-weight: 600;
-    background: var(--input-bg-color);
-    color: var(--custom-black);
-}
-
+.project-filter-btn:hover,
 .filter-btn.active,
 .project-filter-btn.active {
-    font-weight: 700;
-    background: var(--input-bg-color);
-    color: var(--custom-black);
-    border: 1px solid var(--border-color);
+    background: var(--custom-orange);
+    color: white;
 }
 
 .skills-main-wrapper {
