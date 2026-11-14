@@ -17,10 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 const match = filter === 'all' || card.dataset.category === filter;
 
                 if (match) {
-                    card.style.display = 'block';
-                    setTimeout(() => card.classList.remove('hidden'), 100);
+                    card.classList.remove('hidden')
+                    
+                    setTimeout(() => {
+                        card.style.display = 'block';
+                    }, 100);
                 } else {
                     card.classList.add('hidden');
+
                     setTimeout(() => {
                         if (card.classList.contains('hidden')) {
                             card.style.display = 'none';
